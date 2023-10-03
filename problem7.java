@@ -4,11 +4,11 @@ public class problem7 extends SuperKarel  {
 	public void run(){
 
    fillLine();
-//     while nextLineExist
+while(beepersInBag()){
    moveToNextLineStart();
-//     fillLine
+fillLine();
 		}
-
+	}
 	private void moveToNextLineStart() {
 		turnLeft();
 		move();
