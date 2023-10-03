@@ -2,7 +2,7 @@ import stanford.karel.SuperKarel;
 
 public class problem2 extends SuperKarel {
 
-	private void run(){
+	public void run(){
 //moveToTheBeeperPile
 //pickTenBeepers
 //move
@@ -30,7 +30,9 @@ public class problem2 extends SuperKarel {
 	}
 
 	private void pickTenBeepers() {
-		// TODO Auto-generated method stub
+		for(int i=0; i<10; i++){
+			pickBeeper();
+		}
 		
 	}
 
