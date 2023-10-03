@@ -8,8 +8,9 @@ public class problem7 extends SuperKarel  {
 		}
 		if(frontIsClear()){
 			move();
+		}
 		
 	 
 	}
 
-}
+	}
