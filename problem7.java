@@ -9,16 +9,36 @@ public class problem7 extends SuperKarel  {
 				putBeeper();
 			}
 			move();
+			
+		}
+		if(!beepersPresent()){
+			putBeeper();
 		}
 		turnLeft();
 		move();
+		if(!beepersPresent()){
+			putBeeper();
+		}
 		turnLeft();
+	
+		
 		while(frontIsClear()){
+			if(!beepersPresent()){
+				putBeeper();
+			}
 			move();
+			
 		}
 		turnRight();
 		move();
-		turnRight();
+		if(!beepersPresent()){
+				putBeeper();
+			}
+	   turnRight();
+			
+		
+		
+	
 	 
 	}
 
