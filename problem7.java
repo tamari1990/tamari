@@ -4,9 +4,9 @@ public class problem7 extends SuperKarel  {
 	public void run(){
 
    fillLine();
-while(beepersInBag()){
+  while(leftIsClear()){
    moveToNextLineStart();
-fillLine();
+   fillLine();
 		}
 	}
 	private void moveToNextLineStart() {
