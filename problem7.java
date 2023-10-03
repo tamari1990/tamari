@@ -3,7 +3,7 @@ import stanford.karel.SuperKarel;
 public class problem7 extends SuperKarel  {
 	public void run(){
 		
-		if(!beepersPresent()){
+		for(!beepersPresent()){
 			putBeeper();
 		}
 		while(frontIsClear()){
