@@ -7,11 +7,11 @@ public class problem2 extends SuperKarel {
 //pickTenBeepers
 //move
 //putTenBeepers
-		Object moveToTheBeeperPile ();;
-		moveToTheBeeperPile ();
-		pickTenBeepers(); 
-		move();
-		putTenBeepers();
+		//Object moveToTheBeeperPile ();;
+		//moveToTheBeeperPile ();
+		//pickTenBeepers(); 
+		//move();
+		//putTenBeepers();
 		/*for(int i=0; i<4; i++){
 			move();
 		}
