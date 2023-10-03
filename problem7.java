@@ -6,10 +6,18 @@ public class problem7 extends SuperKarel  {
 		if(!beepersPresent()){
 			putBeeper();
 		}
-		if(frontIsClear()){
+		while(frontIsClear()){
 			move();
 		}
-		
+		turnLeft();
+		move();
+		turnLeft();
+		while(frontIsClear()){
+			move();
+		}
+		turnRight();
+		move();
+		turnRight();
 	 
 	}
 
