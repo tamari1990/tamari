@@ -8,18 +8,7 @@ public class problem7 extends SuperKarel  {
 		}
 		if(frontIsClear()){
 			move();
-		}
-		turnLeft();
-		move();
-	    turnLeft();
-	  
-	    
-	 if(frontIsClear()){
-		move();
-		}
-	 turnRight();
-	 move();
-	 turnRight();
+		
 	 
 	}
 
