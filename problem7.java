@@ -31,7 +31,5 @@ public class problem7 extends SuperKarel  {
 			
 		}
 			}
-			
-}
-	}
+				
 }
