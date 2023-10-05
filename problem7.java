@@ -17,7 +17,6 @@ public class problem7 extends SuperKarel  {
 			move();
 		}
 		turnAround();
-		move();
 	}
 
 	private void fillLine() {
@@ -28,7 +27,6 @@ public class problem7 extends SuperKarel  {
 			}
 			if(!beepersPresent()){
 				putBeeper();
-				move();
 			}
 			
 		}
