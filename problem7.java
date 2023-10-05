@@ -17,6 +17,7 @@ public class problem7 extends SuperKarel  {
 			move();
 		}
 		turnAround();
+		move();
 	}
 
 	private void fillLine() {
