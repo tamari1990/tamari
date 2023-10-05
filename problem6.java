@@ -4,17 +4,42 @@ public class problem6 extends SuperKarel {
 
 	public void run(){
 		move();
+		moveFisrtPileToDestinitionAndBackup();
+		move();
+		moveFisrtPileToDestinitionAndBackup();
+		//moveToFisrtPilePosition
+		restoreFromBackup();
+		//moveToFisrtPilePosition
+		restoreFromBackup();
+}
+
+	private void moveFisrtPileToDestinitionAndBackup() {
 		while(beepersPresent()){
 			pickBeeper();
+			moveBeeperFromFirstPileToDestination();
+			backupBeeper();
 		}
+		
+	}
+
+	private void backupBeeper() {
+		turnLeft();
 		move();
-		while(beepersPresent()){
-			pickBeeper();
-		}
+		putBeeper();
+		turnAround();
 		move();
-		while(beepersInBag()){
-			putBeeper();
-		}
-		move();
+		turnLeft();
+		
+	}
+
+	private void moveBeeperFromFirstPileToDestination() {
+           move();
+           move();
+           putBeeper();
+           turnAround();
+           move();
+           move();
+           turnAround();
+		
 	}
 }
