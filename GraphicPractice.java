@@ -8,6 +8,8 @@ public class GraphicPractice extends GraphicsProgram {
 		//GOval secondOval = new GOval(100, 200);
 		rugbyBall = new GOval(200,200);
 		add(rugbyBall, 200, 200);
+		rugbyBall= new GOval(100, 200, 200, 300);
+		add(rugbyBall);
 		
 	}
 
