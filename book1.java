@@ -1,4 +1,7 @@
+import stanford.karel.SuperKarel;
 
-public class book1 {
-
+public class book1 extends SuperKarel {
+	fillPothole();
+	
 }
+	
