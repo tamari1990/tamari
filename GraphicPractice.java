@@ -1,4 +1,8 @@
+import acm.program.GraphicsProgram;
 
-public class GraphicPractice {
+public class GraphicPractice extends GraphicsProgram {
+	public void run (){
+		
+	}
 
 }
