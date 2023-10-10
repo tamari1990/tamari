@@ -13,7 +13,7 @@ public class GraphicPractice extends GraphicsProgram {
 		rugbyBall= new GOval(100, 200, 200, 300);
 		add(rugbyBall);
 		rugbyBall.setFilled(true);
-		rugbyBall.setColor(Color.red);
+		rugbyBall.setColor(Color.RED);
 	}
 
 }
