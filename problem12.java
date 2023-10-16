@@ -13,5 +13,7 @@ public class problem12 extends GraphicsProgram{
 	add(door, 230, 400);
     GOval doorknob = new GOval (5,10);
     add(doorknob, 240,430);
+    GRect window = new GRect (30, 60);
+    add(window, 300, 210);
    }
 }
