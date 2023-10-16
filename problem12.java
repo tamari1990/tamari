@@ -22,6 +22,6 @@ public class problem12 extends GraphicsProgram{
 	
 //	oldBall.setFilled(true);	
 	GRect walls = new GRect (100, 60);
-	add(walls, 100, 100);
+	add(walls, 500, 500);
    }
 }
