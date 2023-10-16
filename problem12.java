@@ -9,8 +9,8 @@ public class problem12 extends GraphicsProgram{
 	
 	GRect walls = new GRect (300, 180);
 	add(walls, 200, 300);
-	GRect windows = new GRect (30, 60);
-	add(windows, 230, 400);
+	GRect door = new GRect (40, 80);
+	add(door, 230, 400);
     
    }
 }
