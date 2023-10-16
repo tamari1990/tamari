@@ -21,7 +21,7 @@ public class problem12 extends GraphicsProgram{
 //	rugbyBall.setColor(Color.RED);
 	
 //	oldBall.setFilled(true);	
-	GRect walls = new GRect (100, 60);
+	GRect walls = new GRect (300, 180);
 	add(walls, 300, 300);
    }
 }
