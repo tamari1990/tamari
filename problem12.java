@@ -29,7 +29,7 @@ public class problem12 extends GraphicsProgram{
 
 	private void buildWindows() {
 		int x = (int) (getWidth()/2 + HOUSE_WIDTH/4 );
-		double y = getHeight() - HOUSE_HEIGHT + 10;
+		double y = getHeight() - HOUSE_HEIGHT + 30;
 		GRect window = new GRect (WINDOW_WIDTH, WINDOW_HEIGHT);
 		add(window, x, y);
 		
