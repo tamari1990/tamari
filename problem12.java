@@ -39,7 +39,7 @@ public class problem12 extends GraphicsProgram{
 		double y2 = y1 - ROOF_HEIGHT;
 		GLine firstHalfOfTheRoof = new GLine (x1, y1, x2, y2);
 		add (firstHalfOfTheRoof);
-		double x3 = x1 + HOUSE_WIDTH/2;
+		double x3 = x1 + HOUSE_WIDTH;
 		
 		GLine secondHalfOfTheRoof = new GLine (x2, y2, x3, y1);
 		add(secondHalfOfTheRoof);
