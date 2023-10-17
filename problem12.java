@@ -42,7 +42,7 @@ public class problem12 extends GraphicsProgram{
 		double x3 = x1 + HOUSE_WIDTH/2;
 		
 		GLine secondHalfOfTheRoof = new GLine (x2, y2, x3, y1);
-		
+		add(secondHalfOfTheRoof);
 	}
 
 	private void buildDoor() {
