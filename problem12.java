@@ -22,15 +22,18 @@ public class problem12 extends GraphicsProgram{
 	private void buildHouse() {
 		buildWalls();
 	    buildDoor();
-//		buildWindows();
+		buildWindows();
 		buildRoof();
 		
 	}
 
-//	private void buildWindows() {
-		// TODO Auto-generated method stub
+	private void buildWindows() {
+		int x = (int) (getWidth()/2 + HOUSE_WIDTH/4 + WINDOW_WIDTH/2 );
+		double y = getHeight() - HOUSE_HEIGHT + 10;
+		GRect window = new GRect (x, y);
+		add(window);
 		
-//	}
+	}
 
 	private void buildRoof() {
 		double x1 = getWidth()/2 - HOUSE_WIDTH/2;
