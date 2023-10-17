@@ -40,16 +40,16 @@ public class problem12 extends GraphicsProgram{
 	private void buildRightWindow() {
 		int x = (int) (getWidth()/2 + HOUSE_WIDTH/4 );
 		double y = getHeight() - HOUSE_HEIGHT + 30;
-		GRect window1 = new GRect (WINDOW_WIDTH, WINDOW_HEIGHT);
-		add(window1, x, y);
+		GRect rightWindow = new GRect (WINDOW_WIDTH, WINDOW_HEIGHT);
+		add(rightWindow, x, y);
 		
 	}
 
 	private void buildLeftWindow() {
 		int x = (int) (getWidth()/2 - HOUSE_WIDTH*3/8);
 		double y = getHeight() - HOUSE_HEIGHT + 30;
-		GRect window2 = new GRect (WINDOW_WIDTH, WINDOW_HEIGHT);
-		add(window2, x, y);
+		GRect leftWindow = new GRect (WINDOW_WIDTH, WINDOW_HEIGHT);
+		add(leftWindow, x, y);
 		
 	}
 
