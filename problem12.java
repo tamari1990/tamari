@@ -5,34 +5,32 @@ import acm.program.GraphicsProgram;
 
 public class problem12 extends GraphicsProgram{
 	
-	public void run (){
-	drawWalls();
-	drawTheDoorAndTheDoorKnob();
-	drawWindows();
-	/*
 	
-    GRect window = new GRect (30, 60);
-    add(window, 300, 310);
-    GRect theOtherWindow = new GRect (30, 60);
-    add(theOtherWindow, 390,310);
-   */}
+	 private static final double HOUSE_WIDTH = 300;
+	 private static final double HOUSE_HEIGHT = 400;
+	 private static final double DOOR_WIDTH = 80;
+	 private static final double DOOR_HEIGHT = 60;
+	 private static final double WINDOW_WIDTH = 30;
+	 private static final double WINDOW_HEIGHT =50;
+	 
+	 public void run (){
+		 buildHouse();
+	 
+}
 
-	private void drawWindows() {
-		
+	private void buildHouse() {
+		buildWalls();
+		buildDoor();
+		buildWindows();
+		buildRoof();
 		
 	}
 
-	private void drawTheDoorAndTheDoorKnob() {
-		GRect door = new GRect (40, 80);
-		add(door, 230, 400);
-	    GOval doorknob = new GOval (5,10);
-	    add(doorknob, 240,430);
-		
-	}
-
-	private void drawWalls() {
-		GRect walls = new GRect (300, 180);
-		add(walls, 200, 300);
+	private void buildWalls() {
+		Grect wall = new GRect (HOUSE_WIDTH, HOUSE_HEIGHT);
+		int x = (int) (getWidth()/2 - HOUSE_WIDTH/2);
+		double y = (getHeight() - HOUSE_HEIGHT);
+		add(wall, x, y);
 		
 	}
 }
