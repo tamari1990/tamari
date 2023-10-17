@@ -12,7 +12,7 @@ public class problem12 extends GraphicsProgram{
 	 private static final double DOOR_HEIGHT = 100;
 	 private static final double WINDOW_WIDTH = 30;
 	 private static final double WINDOW_HEIGHT =50;
-	 private static final double ROOF_HEIGHT = 30;
+	 private static final double ROOF_HEIGHT = 40;
 	 
 	 public void run (){
 		 buildHouse();
@@ -39,6 +39,10 @@ public class problem12 extends GraphicsProgram{
 		double y2 = y1 - ROOF_HEIGHT;
 		GLine firstHalfOfTheRoof = new GLine (x1, y1, x2, y2);
 		add (firstHalfOfTheRoof);
+		double x3 = x1 + HOUSE_WIDTH/2;
+		
+		GLine secondHalfOfTheRoof = new GLine (x2, y2, x3, y1);
+		
 	}
 
 	private void buildDoor() {
