@@ -46,7 +46,7 @@ public class problem12 extends GraphicsProgram{
 	}
 
 	private void buildLeftWindow() {
-		int x = (int) (getWidth()/2 - HOUSE_WIDTH*3/4);
+		int x = (int) (getWidth()/2 - HOUSE_WIDTH*3/8);
 		double y = getHeight() - HOUSE_HEIGHT + 30;
 		GRect window2 = new GRect (WINDOW_WIDTH, WINDOW_HEIGHT);
 		add(window2, x, y);
