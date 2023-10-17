@@ -11,7 +11,7 @@ public class problem12 extends GraphicsProgram{
 	 private static final double DOOR_WIDTH = 80;
 	 private static final double DOOR_HEIGHT = 100;
 	 private static final double WINDOW_WIDTH = 50;
-	 private static final double WINDOW_HEIGHT =30;
+	 private static final double WINDOW_HEIGHT =90;
 	 private static final double ROOF_HEIGHT = 40;
 	 
 	 public void run (){
