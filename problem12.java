@@ -38,9 +38,9 @@ public class problem12 extends GraphicsProgram{
 
 	private void buildDoor() {
 		GRect door = new GRect (DOOR_WIDTH, DOOR_HEIGHT);
-		int x = (int) (getWidth()/2 - DOOR_WIDTH/2);
-		double y = (getHeight() - DOOR_HEIGHT);
-		add (door, x, y);
+		int x1 = (int) (getWidth()/2 - DOOR_WIDTH/2);
+		double y1 = (getHeight() - DOOR_HEIGHT);
+		add (door, x1, y1);
 		
 	}
 
