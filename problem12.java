@@ -20,27 +20,30 @@ public class problem12 extends GraphicsProgram{
 
 	private void buildHouse() {
 		buildWalls();
-//	    buildDoor();
+	    buildDoor();
 //		buildWindows();
 //		buildRoof();
 		
 	}
 
-/*	private void buildWindows() {
+//	private void buildWindows() {
 		// TODO Auto-generated method stub
 		
-	}
+//	}
 
-	private void buildRoof() {
+//	private void buildRoof() {
 		// TODO Auto-generated method stub
 		
-	}
+//	}
 
 	private void buildDoor() {
-		// TODO Auto-generated method stub
+		GRect door = new GRect (DOOR_WIDTH, DOOR_HEIGHT);
+		int x1 = (int) (getWidth()/2 - HOUSE_WIDTH/2);
+		double y1 = (getHeight() - DOOR_WIDTH);
+		add (door, x1, y1);
 		
 	}
-*/
+
 	private void buildWalls() {
 		GRect wall = new GRect (HOUSE_WIDTH, HOUSE_HEIGHT);
 		int x = (int) (getWidth()/2 - HOUSE_WIDTH/2);
