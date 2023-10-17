@@ -12,6 +12,7 @@ public class problem12 extends GraphicsProgram{
 	 private static final double DOOR_HEIGHT = 100;
 	 private static final double WINDOW_WIDTH = 30;
 	 private static final double WINDOW_HEIGHT =50;
+	 private static final double ROOF_HEIGHT = 10;
 	 
 	 public void run (){
 		 buildHouse();
@@ -32,15 +33,19 @@ public class problem12 extends GraphicsProgram{
 //	}
 
 	private void buildRoof() {
-		
+		double x1 = getWidth()/2 - HOUSE_WIDTH/2;
+		double y1 = (getHeight() - HOUSE_HEIGHT);
+		double x2 = x1 + HOUSE_WIDTH/2;
+		double y2 = y1 + ROOF_HEIGHT;
+		GLine firstHalfOfTheRoof = new GLine (x1, y1, x2, y2);
 		
 	}
 
 	private void buildDoor() {
 		GRect door = new GRect (DOOR_WIDTH, DOOR_HEIGHT);
-		int x1 = (int) (getWidth()/2 - DOOR_WIDTH/2);
-		double y1 = (getHeight() - DOOR_HEIGHT);
-		add (door, x1, y1);
+		int x = (int) (getWidth()/2 - DOOR_WIDTH/2);
+		double y = (getHeight() - DOOR_HEIGHT);
+		add (door, x, y);
 		
 	}
 
