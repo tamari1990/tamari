@@ -7,7 +7,18 @@ public class problem21 extends GraphicsProgram{
 	public void run() {
 		for (int i = 0; i < NUM_LINES; i++){
 			drawHorisontalLine(i);
+			drawVerticalLine(i);
 		}
+		
+		
+	}
+
+	private void drawVerticalLine(int i) {
+		double x = i * (getWidth() / (NUM_LINES - 1.0));
+		double y1 = 0;
+		double y2 = getHeight();
+		GLine line = new GLine (x, y1,x, y2);
+		add (line);
 		
 	}
 
