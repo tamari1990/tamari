@@ -12,6 +12,6 @@ public class problem20 extends ConsoleProgram {
 			
 			
 		}
-		print ("the sum is:" + sum);
+		print ("the sum is: " + sum);
 	}
 }
