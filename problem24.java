@@ -7,9 +7,9 @@ public class problem24 extends ConsoleProgram {
 		int n = readInt ("enter number : ");
 		int amount = 0;
 		for (int i = 0; i <= n; i++){
-			boolean factor = n % i == 0;
+			if (n % i == 0) {
 			amount = amount + i;
-			
+			}
 		}
 		println(amount);
 	}
