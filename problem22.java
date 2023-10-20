@@ -4,6 +4,7 @@ import acm.program.GraphicsProgram;
 public class problem22 extends GraphicsProgram {
 	private static final int NUM_CELLS=8;
 	public void run(){
+		
 		double length = Math.min (getWidth(), getHeight() / (double)NUM_CELLS);
 		for (int i = 0; i< NUM_CELLS; i++){
 		
