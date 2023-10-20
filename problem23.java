@@ -7,11 +7,9 @@ public class problem23 extends ConsoleProgram  {
 		int n = readInt("enter number:" );
 		int sum = 0;
 		for (int i=0; i<n; i++) {
-			sum = sum + n;
-			println ("the sum of numbers is: " + sum);
-			
+			sum = sum + n;		
 		}
-		
+		println ("the sum of numbers is: " + sum);
 	}
 
 }
