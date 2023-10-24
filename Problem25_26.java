@@ -6,6 +6,7 @@ public class Problem25_26 extends ConsoleProgram {
 		int n = readInt ("Enter n: ");
 		while ( n <= 0) {
 			println("n should be > 0");
+			n = readInt ("Enter n:");
 		}
 		int m = readInt("Enter m: ");
 		
