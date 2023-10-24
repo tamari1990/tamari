@@ -11,7 +11,7 @@ public class Problem25_26 extends ConsoleProgram {
 		int m = readInt("Enter m: ");
 		while ( m <= 0) {
 			println("n should be > 0");
-			m = readInt ("Enter n:");
+			m = readInt ("Enter m:");
 		}
 		
 		int gcd = gcd(n, m);
