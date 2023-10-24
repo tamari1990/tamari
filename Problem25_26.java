@@ -8,6 +8,12 @@ public class Problem25_26 extends ConsoleProgram {
 		
 		int gcd = gcd(n, m);
 		println("GSD is: " +gcd);
+		int lcm = lcm(n, m);
+		println("LCM is: " +lcm);
+	}
+
+	private int lcm(int n, int m) {
+		return n*m / gcd (n, m);
 	}
 
 	private int gcd(int n, int m) {
