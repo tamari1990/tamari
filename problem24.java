@@ -11,6 +11,7 @@ public class problem24 extends ConsoleProgram {
 			if (n % i == 0) {
 			amount = amount + 1;
 			}
+			
 		}
 		println(amount);
 	}
