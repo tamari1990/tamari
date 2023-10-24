@@ -9,9 +9,9 @@ public class Problem25_26 extends ConsoleProgram {
 			n = readInt ("Enter n:");
 		}
 		int m = readInt("Enter m: ");
-		while ( n <= 0) {
+		while ( m <= 0) {
 			println("n should be > 0");
-			n = readInt ("Enter n:");
+			m = readInt ("Enter n:");
 		}
 		
 		int gcd = gcd(n, m);
