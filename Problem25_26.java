@@ -4,6 +4,9 @@ public class Problem25_26 extends ConsoleProgram {
 	
 	public void run() {
 		int n = readInt ("Enter n: ");
+		while ( n <= 0) {
+			println("n should be > 0");
+		}
 		int m = readInt("Enter m: ");
 		
 		int gcd = gcd(n, m);
