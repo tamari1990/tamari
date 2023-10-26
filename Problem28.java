@@ -17,8 +17,9 @@ public class Problem28 extends ConsoleProgram {
 		int amount = 0;
 		while (n % 2 == 0) {
 			amount++;
+			return amount;
 		}
-		return amount;
+		
 	}
 
 	
