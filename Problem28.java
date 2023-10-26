@@ -14,7 +14,7 @@ public class Problem28 extends ConsoleProgram {
 
 	private int calculateNumberOfEvenNumbers(int n) {
 		int sum = 0;
-		if (n % 2 == 0) {
+		while (n % 2 == 0) {
 			sum++;
 		}
 		return sum;
