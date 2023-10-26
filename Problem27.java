@@ -6,8 +6,8 @@ public class Problem27 extends ConsoleProgram {
 		int n = readInt("enter number n: "  );
 		int m = readInt("enter number m: " );
 		
-		calculatenToThePowerm(n, m);
-		println(calculatenToThePowerm(n, m));
+		int nPowerM = calculatenToThePowerm(n, m);
+		println("The Result Is: " + nPowerM);
 		
 	}
 
