@@ -10,7 +10,9 @@ public class Problem28 extends ConsoleProgram {
 				if (n % 2 == 0) {
 					amountOfEvenNumbers++;
 				}
-				 
+				if(n == -1){
+					break;
+				}
 				
 			}
 			println (amountOfEvenNumbers);
