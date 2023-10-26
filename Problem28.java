@@ -16,8 +16,7 @@ public class Problem28 extends ConsoleProgram {
 				
 			}
 			
-			
-			}
 		println(amountOfEvenNumbers);
+			}
+		
 		}
-}
