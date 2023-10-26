@@ -8,16 +8,17 @@ public class Problem28 extends ConsoleProgram {
 	    n = readInt("enter positive numbers: " );
 		}
 		int m = calculateNumberOfEvenNumbers(n);
+		int amount = 0;
 		println (m);
 		
 	}
 
 	private int calculateNumberOfEvenNumbers(int n) {
-		int sum = 0;
+		int amount = 0;
 		while (n % 2 == 0) {
-			sum++;
+			amount++;
 		}
-		return sum;
+		return amount;
 	}
 
 	
