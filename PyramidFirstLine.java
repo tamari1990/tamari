@@ -11,11 +11,12 @@ public class PyramidFirstLine extends GraphicsProgram {
 	/** Number of bricks in the base of the pyramid */
 		private static final int BRICKS_IN_BASE = 14;
 	public void run() {
-GRect block = new GRect (BRICK_WIDTH, BRICK_HEIGHT);
+
 		
 		for(int i = 0; i < BRICKS_IN_BASE; i++) {
 			double x = getWidth()/2 - BRICK_WIDTH * 7;
 			double y = getHeight() - BRICK_HEIGHT;
+			GRect block = new GRect (BRICK_WIDTH, BRICK_HEIGHT);
 			add(block, x, y);
 			x = x + BRICK_WIDTH;
 			
