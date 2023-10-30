@@ -18,7 +18,8 @@ public class Problem29 extends ConsoleProgram {
 		}
 		if(n == 2){
 			println("2");
-		} else{
+		} 
+		else{
 		println(c);
 		}
 		}
