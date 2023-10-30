@@ -10,7 +10,7 @@ public class Problem29 extends ConsoleProgram {
 		  
 		  int c = a + b;
 		  b = c;
-		  
+		  println(c);
 		  
 		}
 		}
