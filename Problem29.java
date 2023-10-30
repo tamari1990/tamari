@@ -9,8 +9,10 @@ public class Problem29 extends ConsoleProgram {
 		for(int i = 0; i < n; i++){
 		  
 		  int c = a + b;
+		  a = b;
 		  b = c;
-		  c = b + c;
+		  
+		  
 		  println(c);
 		  
 		}
