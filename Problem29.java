@@ -7,7 +7,7 @@ public class Problem29 extends ConsoleProgram {
 		int a = 1;
 		int b = 2;
 		int c = a + b;
-		for(int i = 0; i < n; i++){
+		for(int i = 2; i < n; i++){
 		  
 		 c = a + b;
 		  a = b;
