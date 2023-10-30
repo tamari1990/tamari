@@ -17,5 +17,6 @@ public class Problem29 extends ConsoleProgram {
 		  println(c);
 		  
 		}
+		println(c);
 		}
 }
