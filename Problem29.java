@@ -19,8 +19,10 @@ public class Problem29 extends ConsoleProgram {
 		if(n == 2){
 			println("2");
 		} 
+// vici eseni cudad miweria amdeni if ar unda mqondes mara ver movifiqre
+// for shi  rogor gameertianebina pirveli ori wevric 
 		if(n != 1 && n != 2){
-			println(c);
+			println(c); 
 		}
 		}
 }
