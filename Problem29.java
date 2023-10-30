@@ -9,7 +9,7 @@ public class Problem29 extends ConsoleProgram {
 		int c = a + b;
 		for(int i = 0; i < n; i++){
 		  
-		  
+		 c = a + b;
 		  a = b;
 		  b = c;
 		  
