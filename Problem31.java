@@ -9,8 +9,9 @@ public class Problem31 extends ConsoleProgram  {
 				println("This number is not prime");
 				break;
 			}
-			println("This number is prime");
+			
 		}
+		println("This number is prime");
 	}
 
 }
