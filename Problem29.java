@@ -12,10 +12,14 @@ public class Problem29 extends ConsoleProgram {
 		  c = a + b;
 		  a = b;
 		  b = c;
-		  
-		  
-		  
+		 }
+		if( n == 1){
+			println("1");
 		}
+		if(n == 2){
+			println("2");
+		} else{
 		println(c);
+		}
 		}
 }
