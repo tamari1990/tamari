@@ -8,8 +8,9 @@ public class Problem32 extends ConsoleProgram {
 				if(i % k == 0 && i!=k ){
 					break;
 				}
+				println(i);
 			}
-			println(i);
+			
 		}
 	}
 
