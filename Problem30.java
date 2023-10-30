@@ -9,7 +9,7 @@ public class Problem30 extends ConsoleProgram{
 			int k = n % 10;
 			n = x;
 			print(k);
-			if(k == 0){
+			if(x == 0){
 				break;
 			}
 			
