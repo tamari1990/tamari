@@ -6,16 +6,16 @@ public class Problem33 extends GraphicsProgram{
 	
 	public void run(){
 		RandomGenerator rgen = new RandomGenerator();
-		
+		add(oval);
 	}
 
-	private RandomGenerator RandomGenerator(RandomGenerator rgen) {
+	private GOval RandomGenerator(RandomGenerator rgen) {
 		double x = rgen.nextDouble(0, 300);
 		double y = rgen.nextDouble(0, 200);
 		double R = rgen.nextDouble(1, 60);
 		GOval oval = new GOval(x, y, 2 * R, 2 * R );
 		add(oval);
-		return null;
+		return oval;
 	}
 
 }
