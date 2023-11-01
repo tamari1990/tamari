@@ -6,7 +6,7 @@ public class Hierarchy1stRect extends GraphicsProgram{
 	private static final double rectHeight = 20;
 	public void run(){
 		double x = (getWidth() / 2 - rectLength / 2);
-		double y = getHeight() / 6;
+		double y = (getHeight() / 2 - rectHeight / 2);
 		GRect aboveRect = new GRect (rectLength, rectHeight, x, y);
 		add(aboveRect);
 		
