@@ -9,7 +9,7 @@ public class HierarchyRectangles extends GraphicsProgram {
 
 	public void run() {
 		for (int i = 0; i < 3; i++) {
-			double x = getWidth() / 2 - RECT_LENGTH * 3 / 2 - distanceBetweenTheThreeRects + i * distanceBetweenTheThreeRects;
+			double x = getWidth() / 2 - RECT_LENGTH * 3 / 2 - distanceBetweenTheThreeRects + i * distanceBetweenTheThreeRects + RECT_LENGTH;
 			double y = getHeight() / 2 + distanceBetweenTheAboveAndCentreRects / 2;
 			GRect leftRect = new GRect(RECT_LENGTH, RECT_HEIGHT);
 			add(leftRect, x, y);
