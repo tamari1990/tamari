@@ -25,6 +25,6 @@ public class Problem34 extends GraphicsProgram{
 		circle.setFilled(true);
 		circle.setColor(color);
 		
-		add(circle);
+		add(circle, x, y);
 	}
 }
