@@ -4,7 +4,7 @@ import acm.util.RandomGenerator;
 public class Problem36 extends ConsoleProgram {
 	private static final int Num_Experiments = 1000000;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	
+
 	public void run() {
 		double sumFlips = 0;
 		for (int i = 0; i < Num_Experiments; i++) {
@@ -18,21 +18,19 @@ public class Problem36 extends ConsoleProgram {
 	private int holdExperiment() {
 		int numFlips = 0;
 		int numConsecutiveHeads = 0;
-		while(true) {
+		while (true) {
 			numFlips++;
-			boolean isHeads = rgen.nextBoolean();
-			if(isHeads) {
+			boolean isHeads = rgen.nextBoolean(0.4);
+			if (isHeads) {
 				numConsecutiveHeads += 1;
-				if(numConsecutiveHeads == 3) {
+				if (numConsecutiveHeads == 3) {
 					break;
 				}
-			} else{
+			} else {
 				numConsecutiveHeads = 0;
 			}
 		}
 		return numFlips;
 	}
-		
-	}
 
-
+}
