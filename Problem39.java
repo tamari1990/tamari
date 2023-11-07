@@ -10,6 +10,7 @@ public class Problem39 extends GraphicsProgram {
 		while(circle.getX() <= getWidth()) {
 			int vy = 0;
 			circle.move(vx,vy);
+			pause(PAUSE_MS);
 		}
 	}
     
