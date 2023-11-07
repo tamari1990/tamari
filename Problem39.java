@@ -7,7 +7,7 @@ public class Problem39 extends GraphicsProgram {
 	private static final int vx = 2;
 	public void run() {
 		GOval circle = drawTheCircle();
-		while(circle.getX() <= getWidth()) {
+		while(circle.getX() <= getWidth() - 2 * R) {
 			int vy = 0;
 			circle.move(vx,vy);
 			pause(PAUSE_MS);
