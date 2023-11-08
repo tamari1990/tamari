@@ -22,7 +22,7 @@ public class Problem37 extends ConsoleProgram {
 		return rouletteResult;
 	}
 	private int readBet() {
-		int bet = readInt("enter the number (0 - 36)");
+		int bet = readInt("enter the number (0 - 36) ");
 		if(bet < 0 || bet > 36) {
 			bet = readInt("Enter the number");
 		}
