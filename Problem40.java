@@ -10,7 +10,7 @@ public class Problem40 extends GraphicsProgram {
 	private GOval drawTheCircle() {
 		GOval oval = new GOval( 2 * R, 2 * R);
 		int x = 0;
-		int y = getHeight() / 2;
+		int y = getHeight() / 2 - 2 * R;
 		add(oval, x, y);
 		return oval;
 	}
