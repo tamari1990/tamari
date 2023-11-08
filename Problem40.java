@@ -23,7 +23,7 @@ public class Problem40 extends GraphicsProgram {
 		int x = 0;
 		int y = getHeight() / 2 - R;
 		add(oval, x, y);
-		set.filled(true);
+		oval.setFilled(true);
 		return oval;
 	}
 
