@@ -7,12 +7,14 @@ public class Problem40 extends GraphicsProgram {
 	private static final int PAUSE_MS = 20;
 	public void run() {
 		GOval circle = drawTheCircle();
-		while(true) {
-			if(circle.getX() != getWidth() - 2 * R) {
-				int vy = 0;
-				circle.move(VEL_X, vy);
-				pause(PAUSE_MS);
+		int vx = VEL_X;
+		int vy = 0;
+		while (true) {
+			if ((circle.getX() + 2 * R >= getWidth()) || (circle.getX() < 0)) {
+				vx = -vx;
 			}
+			circle.move(vx, vy);
+			pause(PAUSE_MS);
 		}
 	}
 
@@ -21,6 +23,7 @@ public class Problem40 extends GraphicsProgram {
 		int x = 0;
 		int y = getHeight() / 2 - R;
 		add(oval, x, y);
+		set.filled(true);
 		return oval;
 	}
 
