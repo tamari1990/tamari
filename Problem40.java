@@ -8,7 +8,7 @@ public class Problem40 extends GraphicsProgram {
 	public void run() {
 		GOval circle = drawTheCircle();
 		while(true) {
-			if(circle.getX() != getWidth()) {
+			if(circle.getX() != getWidth() - 2 * R) {
 				int vy = 0;
 				circle.move(VEL_X, vy);
 				pause(PAUSE_MS);
