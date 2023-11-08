@@ -8,7 +8,13 @@ public class Problem37 extends ConsoleProgram {
 	public void run() {
 		int betNumber = readBet();
 		int rouletteNumber = spinRoulette();
+		if(betNumber == rouletteNumber) {
+			println("You won!");
+		}else {
+			println("You lost!");
+		}
 	}
+	
 	private int spinRoulette() {
 		int rouletteResult = rgen.nextInt(MIN_VALUE, MAX_VALUE);
 		println("Roulette result is : " + rouletteResult);
@@ -18,7 +24,7 @@ public class Problem37 extends ConsoleProgram {
 	private int readBet() {
 		int bet = readInt("enter the number (0 - 36)");
 		if(bet < 0 || bet > 36) {
-			bet = readInt("Enter the number")
+			bet = readInt("Enter the number");
 		}
 		return bet;
 	}
