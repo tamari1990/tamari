@@ -18,12 +18,13 @@ public class Additional2 extends GraphicsProgram {
 		double vx = rgen.nextDouble(-V_X_MAX, V_X_MAX);
 		double vy = rgen.nextDouble(-V_Y_MAX, V_Y_MAX);
 		while (true) {
-			ball.move(vx, vy);
-			pause(DELAY);
 			if (ball.getY() == 0) {
 				vy = rgen.nextDouble(0, V_Y_MAX);
 				
 			}
+			ball.move(vx, vy);
+			pause(DELAY);
+			
 		}
 	}
 
