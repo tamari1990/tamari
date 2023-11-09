@@ -12,25 +12,41 @@ import acm.util.RandomGenerator;
 ბალანსი. */
 public class Problem38 extends ConsoleProgram {
 	private static final int AMOUNT_OF_MONEY = 1000;
+	private static final int MIN_NUM = 0;
+	private static final int MAX_NUM = 36;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 
 	public void run() {
 		while (AMOUNT_OF_MONEY > 0) {
-			makeTheBet();
-			spinTheRoulette();
+			int remainingMoney = AMOUNT_OF_MONEY;
+			int betMoney = betTheMoney();
+			int outcome = spinTheRoulette();
+			int betNum = makeTheBet();
+			if (betNum == outcome) {
+				println("YOU WON!");
+				remainingMoney = remainingMoney * 2;
+
+			} else {
+				println("YOU LOST");
+				remainingMoney = remainingMoney - betMoney;
+			}
 		}
 
 	}
 
-	private void spinTheRoulette() {
-		// TODO Auto-generated method stub
+	private int makeTheBet() {
+		int numYouBetOn = readInt("Enter a number 0 - 36: ");	
+		return numYouBetOn;
+	}
+
+	private int spinTheRoulette() {
+		int outcomingNumber = rgen.nextInt(MIN_NUM, MAX_NUM);
+		return outcomingNumber;
 
 	}
 
-	private void makeTheBet() {
-		while (true) {
-			int betMoney = readInt("Enter bet amount: ");
-			int numYouBetOn = readInt("Enter a number 0 - 36");
-		}
+	private int betTheMoney() {
+		int betMoney = readInt("Enter bet amount: ");
+		return betMoney;
 	}
 }
