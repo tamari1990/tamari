@@ -20,11 +20,14 @@ public class Additional2 extends GraphicsProgram {
 		while (true) {
 			if (ball.getY() <= 0) {
 				vy = rgen.nextDouble(0, V_Y_MAX);
-				
+
+			}
+			if (ball.getY() >= getHeight()) {
+				vy = rgen.nextDouble(-V_Y_MAX, 0);
 			}
 			ball.move(vx, vy);
 			pause(DELAY);
-			
+
 		}
 	}
 
