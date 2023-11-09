@@ -20,9 +20,7 @@ public class Problem38 extends ConsoleProgram {
 		int remainingMoney = AMOUNT_OF_MONEY;
 		while (remainingMoney > 0) {
 			int betMoney = betTheMoney();
-			if (betMoney > remainingMoney) {
-				println("You don't have enough money");
-			} else{
+			if(betMoney <= remainingMoney){
 			int outcome = spinTheRoulette();
 			int betNum = makeTheBet();
 			if (betNum == outcome) {
@@ -35,11 +33,12 @@ public class Problem38 extends ConsoleProgram {
 				remainingMoney = remainingMoney - betMoney;
 				println("Money you have left: " + remainingMoney);
 			}
+			
 		}
 		println("GAME OVER! GO HOME!");
-
+		}
 	}
-	}
+	
 	private int makeTheBet() {
 		int numYouBetOn = readInt("Enter a number 0 - 36: ");
 		return numYouBetOn;
