@@ -14,8 +14,8 @@ public class Additional2 extends GraphicsProgram {
 		GOval ball = new GOval (2 * RADIUS, 2 * RADIUS);
 		ball.setFilled(true);
 		add(ball, getWidth() / 2 - RADIUS, getHeight() / 2 - RADIUS);
-		double vx = rgen.nextDouble(0, V_X_MAX);
-		double vy = rgen.nextDouble(0, V_Y_MAX);
+		double vx = rgen.nextDouble(-V_X_MAX, V_X_MAX);
+		double vy = rgen.nextDouble(-V_Y_MAX, V_Y_MAX);
 		while(true) {
 			ball.move(vx,  vy);
 			pause(DELAY);
