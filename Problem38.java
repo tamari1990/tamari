@@ -20,25 +20,25 @@ public class Problem38 extends ConsoleProgram {
 		int remainingMoney = AMOUNT_OF_MONEY;
 		while (remainingMoney > 0) {
 			int betMoney = betTheMoney();
-			if(betMoney <= remainingMoney){
-			int outcome = spinTheRoulette();
-			int betNum = makeTheBet();
-			if (betNum == outcome) {
-				println("YOU WON!");
-				remainingMoney = remainingMoney + betMoney;
-				println("Money you have left: " + remainingMoney);
+			if (betMoney <= remainingMoney) {
+				int outcome = spinTheRoulette();
+				int betNum = makeTheBet();
+				if (betNum == outcome) {
+					println("YOU WON!");
+					remainingMoney = remainingMoney + betMoney;
+					println("Money you have left: " + remainingMoney);
 
-			} else {
-				println("YOU LOST");
-				remainingMoney = remainingMoney - betMoney;
-				println("Money you have left: " + remainingMoney);
+				} else {
+					println("YOU LOST");
+					remainingMoney = remainingMoney - betMoney;
+					println("Money you have left: " + remainingMoney);
+				}
+
 			}
-			
-		}
-		println("NO MONEY LEFT");
+			println("NO MONEY LEFT");
 		}
 	}
-	
+
 	private int makeTheBet() {
 		int numYouBetOn = readInt("Enter a number 0 - 36: ");
 		return numYouBetOn;
