@@ -28,6 +28,9 @@ public class Additional2 extends GraphicsProgram {
 			if (ball.getX() <= getWidth()) {
 				vx = rgen.nextDouble(0, V_X_MAX);
 			}
+			if (ball.getX() + 2 * RADIUS >= getWidth()) {
+				vx = rgen.nextDouble(-V_X_MAX, 0);
+			}
 			ball.move(vx, vy);
 			pause(DELAY);
 
