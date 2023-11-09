@@ -20,11 +20,11 @@ public class Problem38 extends ConsoleProgram {
 		int remainingMoney = AMOUNT_OF_MONEY;
 		while (remainingMoney > 0) {
 			int betMoney = betTheMoney();
-			int outcome = spinTheRoulette();
-			int betNum = makeTheBet();
-			if(betMoney > remainingMoney) {
+			if (betMoney > remainingMoney) {
 				println("You don't have enough money");
 			}
+			int outcome = spinTheRoulette();
+			int betNum = makeTheBet();
 			if (betNum == outcome) {
 				println("YOU WON!");
 				remainingMoney = remainingMoney + betMoney;
