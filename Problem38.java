@@ -18,7 +18,7 @@ public class Problem38 extends ConsoleProgram {
 
 	public void run() {
 		int remainingMoney = AMOUNT_OF_MONEY;
-		while (AMOUNT_OF_MONEY > 0) {
+		while (remainingMoney > 0) {
 			int betMoney = betTheMoney();
 			int outcome = spinTheRoulette();
 			int betNum = makeTheBet();
