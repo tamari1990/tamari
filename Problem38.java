@@ -33,6 +33,7 @@ public class Problem38 extends ConsoleProgram {
 				println("Money you have left: " + remainingMoney);
 			}
 		}
+		println("GAME OVER! GO HOME!");
 		
 	}
 
