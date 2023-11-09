@@ -22,7 +22,7 @@ public class Problem38 extends ConsoleProgram {
 			int betMoney = betTheMoney();
 			if (betMoney > remainingMoney) {
 				println("You don't have enough money");
-			}
+			} else{
 			int outcome = spinTheRoulette();
 			int betNum = makeTheBet();
 			if (betNum == outcome) {
@@ -39,7 +39,7 @@ public class Problem38 extends ConsoleProgram {
 		println("GAME OVER! GO HOME!");
 
 	}
-
+	}
 	private int makeTheBet() {
 		int numYouBetOn = readInt("Enter a number 0 - 36: ");
 		return numYouBetOn;
