@@ -17,14 +17,14 @@ public class Problem38 extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 
 	public void run() {
+		int remainingMoney = AMOUNT_OF_MONEY;
 		while (AMOUNT_OF_MONEY > 0) {
-			int remainingMoney = AMOUNT_OF_MONEY;
 			int betMoney = betTheMoney();
 			int outcome = spinTheRoulette();
 			int betNum = makeTheBet();
 			if (betNum == outcome) {
 				println("YOU WON!");
-				remainingMoney = remainingMoney * 2;
+				remainingMoney = remainingMoney + betMoney;
 				println("Money you have left: " + remainingMoney);
 
 			} else {
@@ -33,7 +33,7 @@ public class Problem38 extends ConsoleProgram {
 				println("Money you have left: " + remainingMoney);
 			}
 		}
-
+		
 	}
 
 	private int makeTheBet() {
