@@ -25,10 +25,12 @@ public class Problem38 extends ConsoleProgram {
 			if (betNum == outcome) {
 				println("YOU WON!");
 				remainingMoney = remainingMoney * 2;
+				println("remainingMoney");
 
 			} else {
 				println("YOU LOST");
 				remainingMoney = remainingMoney - betMoney;
+				println("remainingMoney");
 			}
 		}
 
