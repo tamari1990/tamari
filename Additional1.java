@@ -1,12 +1,12 @@
 import acm.graphics.GLine;
 import acm.program.GraphicsProgram;
 
-public class Additional1 extends GraphicsProgram{
-	
+public class Additional1 extends GraphicsProgram {
+
 	public void run() {
-		while(true) {
+		while (true) {
 			removeAll();
-			GLine line = new GLine (0, getHeight() / 2, getWidth(), getHeight() / 2);
+			GLine line = new GLine(0, getHeight() / 2, getWidth(), getHeight() / 2);
 			add(line);
 			pause(20);
 		}
