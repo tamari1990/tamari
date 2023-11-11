@@ -1,4 +1,25 @@
+import java.awt.*;
+import java.awt.event.*;
+import acm.graphics.*;
+import acm.program.*;
 
-public class ObjectMoving {
+public class ObjectMoving extends GraphicsProgram {
 
+	public void init() {
+		GRect rect = new GRect(100, 100, 150, 100);
+		rect.setFilled(true);
+		rect.setColor(Color.RED);
+		add(rect);
+		GOval oval = new GOval(300, 115, 100, 70);
+		oval.setFilled(true);
+		oval.setColor(Color.GREEN);
+		add(oval);
+		addMouseListeners();
+	}
+	 public void mousePressed(MouseEvent e) {
+	      last = new GPoint(e.getPoint());
+	      gobj = getElementAt(last);
+	   }
+	 private GObject gobj;
+	 private GPoint last;
 }
