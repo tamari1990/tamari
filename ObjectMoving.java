@@ -26,9 +26,9 @@ public class ObjectMoving extends GraphicsProgram {
 	         last = new GPoint(e.getPoint());
 	      }
 	   }
-	 public void mouseClicked(MouseEvent e) {
-	      if (gobj != null) gobj.sendToFront();
-	   }
+//	 public void mouseClicked(MouseEvent e) {
+//	      if (gobj != null) gobj.sendToFront();
+//	   }
 	 private GObject gobj;
 	 private GPoint last;
 }
