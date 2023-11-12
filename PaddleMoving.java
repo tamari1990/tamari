@@ -9,8 +9,8 @@ public class PaddleMoving extends GraphicsProgram  {
 	private static final int PADDLE_Y_OFFSET = 30;
 	public void init() {
 		GRect paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
-		int x = WIDTH / 2 - PADDLE_WIDTH / 2;
-		int y = HEIGHT - PADDLE_Y_OFFSET - PADDLE_HEIGHT;
+		int x = getWidth() / 2 - PADDLE_WIDTH / 2;
+		int y = getHeight() / 2 - PADDLE_Y_OFFSET - PADDLE_HEIGHT;
 		paddle.setFilled(true);
 		add(paddle, x, y);
 		addMouseListeners();
