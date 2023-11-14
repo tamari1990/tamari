@@ -12,7 +12,7 @@ public class Problem41 extends GraphicsProgram {
 	public void mouseDragged (MouseEvent event){
 		addBall(event.getX(), event.getY());
 	}
-	public void mouseClicked (MouseEvent e) {
+	public void mousePressed (MouseEvent e) {
 		addBall(e.getX(), e.getY());
 	}
 	private void addBall(int centerX, int centerY) {
