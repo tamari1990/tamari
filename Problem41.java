@@ -12,6 +12,6 @@ public class Problem41 extends GraphicsProgram {
 	public void mouseDragged (MouseEvent event){
 		GOval ball = new GOval (2 * R, 2 * R);
 		ball.setFilled(true);
-		add(ball, event.getX(), event.getY() );
+		add(ball, event.getX() - R, event.getY() - R );
 	}
 }
