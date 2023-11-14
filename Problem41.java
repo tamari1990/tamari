@@ -10,8 +10,14 @@ public class Problem41 extends GraphicsProgram {
 	addMouseListeners();
 		}
 	public void mouseDragged (MouseEvent event){
+		addBall(event.getX(), event.getY());
+	}
+	public void mousePressed (MouseEvent e) {
+		addBall(e.getX(), e.getY());
+	}
+	private void addBall(int centerX, int centerY) {
 		GOval ball = new GOval (2 * R, 2 * R);
 		ball.setFilled(true);
-		add(ball, event.getX() - R, event.getY() - R );
+		add(ball, centerX - R, centerY - R );
 	}
 }
