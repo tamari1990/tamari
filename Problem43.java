@@ -7,6 +7,7 @@ import acm.program.GraphicsProgram;
 public class Problem43 extends GraphicsProgram {
 	private static final int R = 50;
 	private GOval circle;
+	private GObject lastPressed;
 	private int prevX;
 	private int prevY;
 	public void run() {
@@ -23,9 +24,9 @@ public class Problem43 extends GraphicsProgram {
 		}
 	}
 	public void mouseDragged(MouseEvent e) {
-		GObject obj = getElementAt(e.getX(), e.getY());
-		if(obj != null){
-			obj.move(e.getX() - prevX, e.getY() - prevY);
+// obj = getElementAt(e.getX(), e.getY());
+		if(lastPressed != null){
+			lastPressed.move(e.getX() - prevX, e.getY() - prevY);
 			prevX = e.getX();
 			prevY = e.getY();
 		}
