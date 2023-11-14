@@ -18,6 +18,7 @@ public class Problem43 extends GraphicsProgram {
 	}
 	public void mousePressed(MouseEvent e) {
 		GObject obj = getElementAt(e.getX(), e.getY());
+		lastPressed = obj;
 		if(obj != null) {
 			prevX = e.getX();
 			prevY = e.getY();
