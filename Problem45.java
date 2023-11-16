@@ -11,7 +11,7 @@ public class Problem45 extends ConsoleProgram {
 				num++;
 			}
 		}
-		println("number of " + symbol + "is:"+ num);
+		println("number of " + symbol + " is:"+ num);
 		
 	}
 }
