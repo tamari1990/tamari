@@ -13,7 +13,7 @@ public class Problem46 extends ConsoleProgram{
 				maxChar = text.charAt(i);
 			}
 		}
-			println(maxChar);
+			
 	}
 	private int numOccurences(String text, char symbol) {
 		int num = 0;
