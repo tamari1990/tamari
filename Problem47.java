@@ -5,8 +5,8 @@ public class Problem47 extends ConsoleProgram {
 	public void run() {
 		String word = readLine(" enter a word: ");
 		int matchingChars = 0;
-		for(int i = 0; i < word.length(); i++) {
-			if(word.charAt(i) == word.charAt(word.length() - i)) {
+		for(int i = 0; i < word.length() / 2; i++) {
+			if(word.charAt(i) == word.charAt(word.length() - 1 - i)) {
 				matchingChars++;
 		}
 	}
