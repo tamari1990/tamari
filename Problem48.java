@@ -14,17 +14,18 @@ public class Problem48 extends ConsoleProgram {
 	private int calculateMatches(char charAt, String text, int i) {
 		char character = text.charAt(i);
 		int match = 0;
+		for (int k = i - 1; k >= 0; k--) {
+			if (text.charAt(i) == text.charAt(k)) {
+				break;
+			}
+		}
 		for (int j = 0; j < text.length(); j++) {
 			if (character == text.charAt(j)) {
 				match++;
 			}
 		}
 
-		for (int k = i; k >= 0; k--) {
-			if (text.charAt(i) == text.charAt(k)) {
-				break;
-			}
-		}
+		
 		return match;
 	}
 
