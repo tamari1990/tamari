@@ -16,7 +16,7 @@ public class Problem48 extends ConsoleProgram {
 		int match = 0;
 		for (int k = i - 1; k >= 0; k--) {
 			if (text.charAt(i) == text.charAt(k)) {
-				break;
+				return 0;
 			}
 		}
 		for (int j = 0; j < text.length(); j++) {
