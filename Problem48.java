@@ -7,7 +7,9 @@ public class Problem48 extends ConsoleProgram {
 		String text = readLine("Enter text: ");
 		for (int i = 0; i < text.length(); i++) {
 			int matches = calculateMatches(text.charAt(i), text, i);
-			println(text.charAt(i) + " : " + matches);
+			if (matches != 0) {
+				println(text.charAt(i) + " : " + matches);
+			}
 		}
 	}
 
@@ -16,7 +18,7 @@ public class Problem48 extends ConsoleProgram {
 		int match = 0;
 		for (int k = i - 1; k >= 0; k--) {
 			if (text.charAt(i) == text.charAt(k)) {
-				break;
+				return 0;
 			}
 		}
 		for (int j = 0; j < text.length(); j++) {
@@ -25,7 +27,6 @@ public class Problem48 extends ConsoleProgram {
 			}
 		}
 
-		
 		return match;
 	}
 
