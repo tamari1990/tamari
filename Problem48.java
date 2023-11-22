@@ -20,7 +20,7 @@ public class Problem48 extends ConsoleProgram {
 			}
 		}
 
-		for (int k = i - 1; k > 0; k--) {
+		for (int k = i; k > 0; k--) {
 			if (text.charAt(i) == text.charAt(k)) {
 				break;
 			}
