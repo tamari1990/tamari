@@ -6,7 +6,7 @@ public class CountUppercase extends ConsoleProgram {
 		String text = readLine("enter text : ");
 		int count = 0;
 		count = calulateTheNumberOfUppercase(text, count);
-		println("There are " + count + "Uppercase letters");
+		println("There are " + count + " Uppercase letters");
 	}
 
 	private int calulateTheNumberOfUppercase(String text, int count) {
