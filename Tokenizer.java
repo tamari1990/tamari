@@ -11,10 +11,12 @@ public class Tokenizer extends ConsoleProgram{
 
 	private void findTheTokens(String text) {
 		StringTokenizer tokenizer = new StringTokenizer(text);
+		int count = 0;
 		for(int i = 0; tokenizer.hasMoreTokens(); i++) {
-			println(tokenizer.nextToken());
+			//println(tokenizer.nextToken());
+			count++;
 		}
-		
+		println(count);
 	}
 
 }
