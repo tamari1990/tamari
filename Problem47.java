@@ -11,9 +11,9 @@ public class Problem47 extends ConsoleProgram {
 		}
 	}
 		if(matchingChars == word.length() / 2){
-			println("This word is a palindrom");
+			println("This word is a palindrome");
 		} else{
-			println("This word is not a palindrom");
+			println("This word is not a palindrome");
 		}
 		
 	}
