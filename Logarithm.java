@@ -6,7 +6,7 @@ public class Logarithm extends ConsoleProgram {
 		int m = readInt("Enter the number m: ");
 		int n = readInt("Enter the number n: ");
 		int log = 0;
-		int k =0;
+		int k = 1;
 		while (Math.pow(n, k) <= m) {
 			log++;
 			k++;
