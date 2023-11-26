@@ -18,7 +18,7 @@ public class FatherTest extends ConsoleProgram {
 
 	private int calculateTheMathes(String luka, String anakin, int matches, int i) {
 		int match = 0;
-		for (int j = i; j <= Math.min(luka.length(), anakin.length()); j++) {
+		for (int j = i; j < Math.min(luka.length(), anakin.length()); j++) {
 			if (luka.charAt(j) == anakin.charAt(j)) {
 				match++;
 			} else {
