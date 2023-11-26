@@ -7,9 +7,12 @@ public class FatherTest extends ConsoleProgram {
 		int matches = 0;
 		for (int i = 0; i < luka.length(); i++) {
 			int colliders = calculateTheMathes(luka, anakin, matches, i);
-			println(colliders);
+			 if (colliders > matches) {
+	                matches = colliders;
+	            }
 
 		}
+		println(matches);
 
 	}
 
@@ -22,9 +25,6 @@ public class FatherTest extends ConsoleProgram {
 				break;
 			}
 		}
-		if(match > matches){
-		matches = match;		
-		}
-		return matches;
+		return match;
 	}
 }
