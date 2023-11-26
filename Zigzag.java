@@ -23,5 +23,12 @@ private int y1;
 		x1 = x2;
 		y1 = y2;
 	}
+	public void mouseDragged(MouseEvent e) {
+		int x2 = e.getX();
+		int y2 = e.getY();
+		GLine line = new GLine(x1, y1, x2, y2);
+		add(line);
+		
+	}
 
 }
