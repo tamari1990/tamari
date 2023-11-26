@@ -2,7 +2,7 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class ScoreCounter extends GraphicsProgram{
-	private static final int BOX_SIZE = 70;
+	private static final int BOX_SIZE = 200;
 	public void run() {
 		drawTheSquare();
 	}
