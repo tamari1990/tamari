@@ -12,6 +12,7 @@ public class ScoreCounter extends GraphicsProgram {
 	private int lastX;
 	private int firstY;
 	private int lastY;
+	private GLabel scoreLabel;
 
 	public void run() {
 		String num = "" + score;
@@ -28,10 +29,13 @@ public class ScoreCounter extends GraphicsProgram {
 */	}
 
 	private void writeTheScore(String num) {
-		GLabel score = new GLabel(num);
-		double x = getWidth() / 2 - score.getWidth() / 2;
-		double y = getHeight() / 2 - score.getHeight() / 2;
-		add(score, x, y);
+		 if (scoreLabel != null) {
+	            remove(score);
+	        }
+		scoreLabel = new GLabel(num);
+		double x = getWidth() / 2 - scoreLabel.getWidth() / 2;
+		double y = getHeight() / 2 - scoreLabel.getHeight() / 2;
+		add(scoreLabel, x, y);
 	}
 
 	private void drawTheSquare() {
