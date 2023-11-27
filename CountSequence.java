@@ -27,7 +27,7 @@ public class CountSequence extends ConsoleProgram {
 				numOfSteps++;
 			}
 		}
-		return 0;
+		return numOfSteps;
 	}
 
 }
