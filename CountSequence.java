@@ -3,7 +3,7 @@ import acm.util.RandomGenerator;
 
 public class CountSequence extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	private static final int NUMBER_OF_EXPERIMENTS = 1000;
+	private static final int NUMBER_OF_EXPERIMENTS = 10;
 
 	public void run() {
 		int n = readInt("enter a positive integer: ");
