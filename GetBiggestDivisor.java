@@ -9,7 +9,6 @@ public class GetBiggestDivisor extends ConsoleProgram {
 	}
 
 	private int biggestDivisor(int n) {
-
 		int x = 1;
 		for (int i = 1; i <= n; i++) {
 			boolean isPrime = isPrime(i);
@@ -22,7 +21,7 @@ public class GetBiggestDivisor extends ConsoleProgram {
 	}
 
 	private boolean isPrime(int i) {
-		for (int j = 1; j <= i; j++) {
+		for (int j = 2; j <= i; j++) {
 			if (i % j == 0) {
 				return false;
 			}
