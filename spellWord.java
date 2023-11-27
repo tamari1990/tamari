@@ -8,6 +8,8 @@ public class spellWord extends ConsoleProgram{
 		boolean isPossible = possible(firstWord, secondWord);
 		if(possible(firstWord, secondWord)){
 			println("true");
+		} else{
+			println("false");
 		}
 	}
 
