@@ -17,8 +17,8 @@ public class CountSequence extends ConsoleProgram {
 
 	private int flipTheCoin(int n) {
 		int numOfSteps = 0;
-		boolean isHeads = rgen.nextBoolean();
 		while (n != 0) {
+			boolean isHeads = rgen.nextBoolean();
 			if (isHeads) {
 				n = n / 2;
 				numOfSteps++;
