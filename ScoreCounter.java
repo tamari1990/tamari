@@ -14,9 +14,10 @@ public class ScoreCounter extends GraphicsProgram {
 	private int firstY;
 	private int lastY;
 	private GLabel scoreLabel;
+	private int scoreNum;
 
 	public void run() {
-		String num = "" + score;
+		String num = "" + scoreNum;
 		drawTheSquare();
 		writeTheScore(num);
 		addMouseListeners();
@@ -48,14 +49,14 @@ public class ScoreCounter extends GraphicsProgram {
 	public void mouseReleased(MouseEvent e) {
 		lastX = e.getX();
 		lastY = e.getY();
+		int scoreNum = score;
 		if (firstX > getWidth() / 2 - BOX_SIZE / 2 && firstX < getWidth() / 2 + BOX_SIZE / 2
 				&& lastX > getWidth() / 2 - BOX_SIZE / 2 && lastX < getWidth() / 2 + BOX_SIZE / 2
 				&& firstY > getHeight() / 2 - BOX_SIZE / 2 && firstY < getHeight() / 2 + BOX_SIZE / 2
 				&& lastY > getHeight() / 2 - BOX_SIZE / 2 && lastY < getHeight() / 2 + BOX_SIZE / 2 && lastX > firstX
 				&& score != 9) {
-			score++;
-			GOval oval = new GOval(50, 50);
-			add(oval);
+			scoreNum++;
+			
 		}
 	}
 
