@@ -17,7 +17,7 @@ public class GetBiggestDivisor extends ConsoleProgram {
 			}
 		}
 		if (x == 0) {
-	        x = 1;
+	        x = 7;
 	    }
 		return x;
 
