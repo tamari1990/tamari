@@ -12,7 +12,7 @@ public class GetBiggestDivisor extends ConsoleProgram {
 		int x = 1;
 		for (int i = 1; i <= n; i++) {
 			boolean isPrime = isPrime(i);
-			if (n % i == 0 && i > x && isPrime) {
+			if (n % i == 0 &&  isPrime) {
 				x = i;
 			}
 		}
