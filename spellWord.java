@@ -16,7 +16,7 @@ public class spellWord extends ConsoleProgram{
 		for(int i = 0; i < secondWord.length(); i++) {
 			boolean isCharInFirstWord = isCharacter(i, firstWord, secondWord);
 			boolean noRepeat = noRepeat(i, firstWord, secondWord);
-			if(isCharacter(i, firstWord, secondWord)){
+			if(isCharacter(i, firstWord, secondWord) && noRepeat(i, firstWord, secondWord)){
 				num++;
 			}
 		}
