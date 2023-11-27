@@ -15,6 +15,7 @@ public class spellWord extends ConsoleProgram{
 		int num = 0;
 		for(int i = 0; i < secondWord.length(); i++) {
 			boolean isCharInFirstWord = isCharacter(i, firstWord, secondWord);
+			boolean noRepeat = noRepeat(i, firstWord, secondWord);
 			if(isCharacter(i, firstWord, secondWord)){
 				num++;
 			}
@@ -23,6 +24,16 @@ public class spellWord extends ConsoleProgram{
 			return true;
 		}
 		return false;
+	}
+
+	private boolean noRepeat(int i, String firstWord, String secondWord) {
+		for(int k = 0; k < i; k++) {
+			if(secondWord.charAt(i) == secondWord.charAt(k)) {
+				return false;
+			}
+		}
+			
+		return true;
 	}
 
 	private boolean isCharacter(int i, String firstWord, String secondWord) {
