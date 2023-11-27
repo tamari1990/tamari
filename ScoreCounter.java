@@ -18,14 +18,14 @@ public class ScoreCounter extends GraphicsProgram {
 		drawTheSquare();
 		writeTheScore(num);
 		addMouseListeners();
-		if (firstX > getWidth() / 2 - BOX_SIZE / 2 && firstX < getWidth() / 2 + BOX_SIZE / 2
+/*		if (firstX > getWidth() / 2 - BOX_SIZE / 2 && firstX < getWidth() / 2 + BOX_SIZE / 2
 				&& lastX > getWidth() / 2 - BOX_SIZE / 2 && lastX < getWidth() / 2 + BOX_SIZE / 2
 				&& firstY > getHeight() / 2 - BOX_SIZE / 2 && firstY < getHeight() / 2 + BOX_SIZE / 2
 				&& lastY > getHeight() / 2 - BOX_SIZE / 2 && lastY < getHeight() / 2 + BOX_SIZE / 2 && lastX > firstX
 				&& score != 9) {
 			score++;
 		}
-	}
+*/	}
 
 	private void writeTheScore(String num) {
 		GLabel score = new GLabel(num);
@@ -50,6 +50,13 @@ public class ScoreCounter extends GraphicsProgram {
 	public void mouseReleased(MouseEvent e) {
 		lastX = e.getX();
 		lastY = e.getY();
+		if (firstX > getWidth() / 2 - BOX_SIZE / 2 && firstX < getWidth() / 2 + BOX_SIZE / 2
+				&& lastX > getWidth() / 2 - BOX_SIZE / 2 && lastX < getWidth() / 2 + BOX_SIZE / 2
+				&& firstY > getHeight() / 2 - BOX_SIZE / 2 && firstY < getHeight() / 2 + BOX_SIZE / 2
+				&& lastY > getHeight() / 2 - BOX_SIZE / 2 && lastY < getHeight() / 2 + BOX_SIZE / 2 && lastX > firstX
+				&& score != 9) {
+			score++;
+		}
 	}
 
 }
