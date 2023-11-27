@@ -30,7 +30,7 @@ public class ScoreCounter extends GraphicsProgram {
 
 	private void writeTheScore(String num) {
 		 if (scoreLabel != null) {
-	            remove(score);
+	            remove(scoreLabel);
 	        }
 		scoreLabel = new GLabel(num);
 		double x = getWidth() / 2 - scoreLabel.getWidth() / 2;
