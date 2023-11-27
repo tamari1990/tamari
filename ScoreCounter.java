@@ -58,6 +58,15 @@ public class ScoreCounter extends GraphicsProgram {
 			writeTheScore(String.valueOf(score));
 			
 		}
+		if (firstX > getWidth() / 2 - BOX_SIZE / 2 && firstX < getWidth() / 2 + BOX_SIZE / 2
+				&& lastX > getWidth() / 2 - BOX_SIZE / 2 && lastX < getWidth() / 2 + BOX_SIZE / 2
+				&& firstY > getHeight() / 2 - BOX_SIZE / 2 && firstY < getHeight() / 2 + BOX_SIZE / 2
+				&& lastY > getHeight() / 2 - BOX_SIZE / 2 && lastY < getHeight() / 2 + BOX_SIZE / 2 && lastX < firstX
+				&& score != 0) {
+			score--;
+			writeTheScore(String.valueOf(score));
+			
+		}
 	}
 
 }
