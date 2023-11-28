@@ -23,25 +23,22 @@ public class Flicker extends GraphicsProgram {
 		circle.setFilled(true);
 		GObject object = getElementAt(e.getX(), e.getY());
 		if (object != null) {
-			while (colorNumber != 5) {
-				colorNumber = rgen.nextInt(1, 5);
-				if (colorNumber == 1) {
-					circle.setColor(Color.red);
-				}
-				if (colorNumber == 2) {
-					circle.setColor(Color.blue);				
-				}
-				if (colorNumber == 3) {
-					circle.setColor(Color.yellow);				
-				}
-				if (colorNumber == 4) {
-					circle.setColor(Color.black);				
-				}
-				if (colorNumber == 5) {
-					circle.setColor(Color.green);
-				}
+			colorNumber = rgen.nextInt(1, 5);
+			if (colorNumber == 1) {
+				circle.setColor(Color.red);
+			}
+			if (colorNumber == 2) {
+				circle.setColor(Color.blue);
+			}
+			if (colorNumber == 3) {
+				circle.setColor(Color.yellow);
+			}
+			if (colorNumber == 4) {
+				circle.setColor(Color.black);
+			}
+			if (colorNumber == 5) {
+				circle.setColor(Color.green);
 			}
 		}
 	}
-
 }
