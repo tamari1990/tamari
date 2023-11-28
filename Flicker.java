@@ -34,7 +34,8 @@ public class Flicker extends GraphicsProgram {
 		GOval circle = new GOval(CIRCLE_D, CIRCLE_D);
 		add(circle, x - CIRCLE_D / 2, y - CIRCLE_D / 2);
 		circle.setFilled(true);
-		
+		Color color = rgen.nextColor();
+		circle.setColor(color);
 	}
 		
 	}
