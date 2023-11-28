@@ -19,11 +19,11 @@ public class Sorter extends ConsoleProgram {
 			if (s.charAt(i) == index) {
 				for (int j = i; j >= 0; j--) {
 					if (s.charAt(j) == ' ') {
-						newSentence = newSentence + s.substring(j, i + 1);
-						continue;
+						newSentence = newSentence + s.substring(j + 1, i + 1);
+						break;
 					}
 				}
-				continue;
+				
 			}
 		}
 		return newSentence;
