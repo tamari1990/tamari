@@ -14,7 +14,6 @@ public class Flicker extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		pause(1000);
 		int x = e.getX();
 		int y = e.getY();
 		GOval circle = new GOval(CIRCLE_D, CIRCLE_D);
@@ -24,18 +23,23 @@ public class Flicker extends GraphicsProgram {
 			colorNumber = rgen.nextInt(1, 5);
 			if (colorNumber == 1) {
 				circle.setColor(Color.red);
+				pause(1000);
 			}
 			if (colorNumber == 2) {
 				circle.setColor(Color.blue);
+				pause(1000);
 			}
 			if (colorNumber == 3) {
 				circle.setColor(Color.yellow);
+				pause(1000);
 			}
 			if (colorNumber == 4) {
 				circle.setColor(Color.black);
+				pause(1000);
 			}
 			if (colorNumber == 5) {
 				circle.setColor(Color.green);
+				pause(1000);
 			}
 		}
 	}
