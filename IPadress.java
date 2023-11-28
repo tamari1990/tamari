@@ -3,9 +3,9 @@ import acm.program.ConsoleProgram;
 public class IPadress extends ConsoleProgram{
 	
 	public void run(){
-		String address = readLine("enter IP address");
+		String address = readLine("enter IP address: ");
 		address = replaceDots(address);
-		println(address);
+		println("the adsress is: " + address);
 	}
 
 	private String replaceDots(String address) {
