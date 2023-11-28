@@ -9,7 +9,7 @@ public class Sorter extends ConsoleProgram {
 	}
 
 	private String sortTheSentence(String s) {
-		num = 0;
+		num = 1;
 		String number = "" + num;
 		char index = number.charAt(0);
 		String newSentence = "";
