@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class Balance extends ConsoleProgram {
 	public void run() {
-		String s = ("enter the text: ");
+		String s = readLine("enter the text: ");
 		int matches = 0;
 		matches = countTheMatches(s, matches);
 		println(matches);
