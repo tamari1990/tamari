@@ -16,36 +16,29 @@ public class Flicker extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		int x = e.getX();
-		int y = e.getY();
+		GObject obj = getElementAt(e.getX(), e.getY());
+
+        if (obj == null) {
+            createCircle(e.getX(), e.getY());
+        } else if (obj instanceof GOval) {
+            flashCircle((GOval) obj);
+        }
+		}
+
+	private void flashCircle(GOval obj) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void createCircle(int x, int y) {
 		GOval circle = new GOval(CIRCLE_D, CIRCLE_D);
 		add(circle, x - CIRCLE_D / 2, y - CIRCLE_D / 2);
 		circle.setFilled(true);
-		GObject object = getElementAt(e.getX(), e.getY());
-		if (object != null) {
-			colorNumber = rgen.nextInt(1, 5);
-			if (colorNumber == 1) {
-				circle.setColor(Color.red);
-			}
-			if (colorNumber == 2) {
-				circle.setColor(Color.blue);
-			}
-			if (colorNumber == 3) {
-				circle.setColor(Color.yellow);
-			}
-			if (colorNumber == 4) {
-				circle.setColor(Color.black);
-			}
-			if (colorNumber == 5) {
-				circle.setColor(Color.green);
-			}
-			while(circle.getColor() != Color.green) {
-				colorNumber = rgen.nextInt(1, 5);
-			}
-		}
+		
+	}
 		
 	}
 
 	
-}
+
 	
