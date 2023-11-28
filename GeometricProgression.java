@@ -6,7 +6,7 @@ public class GeometricProgression extends ConsoleProgram {
 		String s = "";
 		while (true) {
 			int n = readInt("enter an integer: ");
-			if (n != 1) {
+			if (n != -1) {
 				s = s + n;
 			}
 			if (n == -1) {
