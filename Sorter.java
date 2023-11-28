@@ -10,10 +10,10 @@ public class Sorter extends ConsoleProgram {
 	}
 
 	private String sortTheSentence(String s) {
+		num++;
 		String number = "" + num;
 		char index = number.charAt(0);
 		String newSentence = "";
-		num++;
 		for (int i = 0; i < s.length(); i++) {
 			if (s.charAt(i) == index) {
 				for (int j = i; j > 0; j--) {
