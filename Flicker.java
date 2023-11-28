@@ -21,13 +21,13 @@ public class Flicker extends GraphicsProgram {
 		if (obj == null) {
 			createCircle(e.getX(), e.getY());
 		} else if (obj instanceof GOval) {
-			flashCircle((GOval) obj);
+			flashCircle(obj);
 		}
 	}
 
-	private void flashCircle(GOval circle) {
-		while(circle.getColor() != Color.green) {
-			circle.setColor(rgen.nextColor());
+	private void flashCircle(GObject obj) {
+		while(obj.getColor() != Color.green) {
+			obj.setColor(rgen.nextColor());
 			pause(1000);
 		}
 
