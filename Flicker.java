@@ -18,16 +18,19 @@ public class Flicker extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		GObject obj = getElementAt(e.getX(), e.getY());
 
-        if (obj == null) {
-            createCircle(e.getX(), e.getY());
-        } else if (obj instanceof GOval) {
-            flashCircle((GOval) obj);
-        }
+		if (obj == null) {
+			createCircle(e.getX(), e.getY());
+		} else if (obj instanceof GOval) {
+			flashCircle((GOval) obj);
+		}
+	}
+
+	private void flashCircle(GOval circle) {
+		while(circle.getColor() != Color.green) {
+			circle.setColor(rgen.nextColor());
+			pause(1000);
 		}
 
-	private void flashCircle(GOval obj) {
-		// TODO Auto-generated method stub
-		
 	}
 
 	private void createCircle(int x, int y) {
@@ -37,9 +40,5 @@ public class Flicker extends GraphicsProgram {
 		Color color = rgen.nextColor();
 		circle.setColor(color);
 	}
-		
-	}
 
-	
-
-	
+}
