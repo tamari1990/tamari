@@ -20,12 +20,10 @@ public class Sorter extends ConsoleProgram {
 				for (int j = i; j >= 0; j--) {
 					if (s.charAt(j) == ' ') {
 						newSentence = newSentence + s.substring(j, i + 1);
-						
 					}
+					break;
 				}
-
 			}
-			break;
 		}
 		return newSentence;
 	}
