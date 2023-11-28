@@ -5,6 +5,7 @@ public class Pangram extends ConsoleProgram{
 	public void run() {
 		sentence = readLine("enter a sentence: ");
 		checkIfPangram(sentence);
+		println(checkIfPangram(sentence));
 	}
 	public boolean checkIfPangram(String sentence) {
 		for(int i = 'a'; i <= 'z'; i++) {
