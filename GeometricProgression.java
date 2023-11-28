@@ -13,7 +13,13 @@ public class GeometricProgression extends ConsoleProgram {
 				break;
 			}
 		}
-		println(s);
+		
+	}
+	private boolean isGeometricProgression( int n, String s) {
+		for(int i = 0; i < s.length(); i++) {
+			
+		}
+		return true;
 	}
 
 }
