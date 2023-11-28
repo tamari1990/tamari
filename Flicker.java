@@ -39,7 +39,7 @@ public class Flicker extends GraphicsProgram {
 			if (colorNumber == 5) {
 				circle.setColor(Color.green);
 			}
-			if(circle.getColor() != Color.green) {
+			while(circle.getColor() != Color.green) {
 				colorNumber = rgen.nextInt(1, 5);
 			}
 		}
