@@ -26,6 +26,9 @@ public class Flicker extends GraphicsProgram {
 			colorNumber = rgen.nextInt(1, 5);
 			if (colorNumber == 1) {
 				circle.setColor(Color.red);
+				while(colorNumber != 5) {
+				colorNumber = rgen.nextInt(2, 5);
+				}
 			}
 			if (colorNumber == 2) {
 				circle.setColor(Color.blue);
@@ -40,28 +43,7 @@ public class Flicker extends GraphicsProgram {
 				circle.setColor(Color.green);
 			}
 		}
-		makeTheCirclesColorful(e);
-	}
-
-	private void makeTheCirclesColorful(MouseEvent e) {
-		GObject object = getElementAt(e.getX(), e.getY());
-		if(object != null) {
-			colorNumber = rgen.nextInt(1, 5);
-			if (colorNumber == 1) {
-				object.setColor(Color.red);
-			}
-			if (colorNumber == 2) {
-				object.setColor(Color.blue);
-			}
-			if (colorNumber == 3) {
-				object.setColor(Color.yellow);
-			}
-			if (colorNumber == 4) {
-				object.setColor(Color.black);
-			}
-			if (colorNumber == 5) {
-				object.setColor(Color.green);
-			}
-		}
+		
 	}
 }
+	
