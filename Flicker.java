@@ -8,7 +8,7 @@ import acm.util.RandomGenerator;
 public class Flicker extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int CIRCLE_D = 100;
-
+	private int colorNumber;
 	public void run() {
 		addMouseListeners();
 	}
@@ -19,8 +19,8 @@ public class Flicker extends GraphicsProgram {
 		GOval circle = new GOval(CIRCLE_D, CIRCLE_D);
 		add(circle, x - CIRCLE_D / 2, y - CIRCLE_D / 2);
 		circle.setFilled(true);
-		while (true) {
-			int colorNumber = rgen.nextInt(1, 5);
+		while (colorNumber != 5) {
+			colorNumber = rgen.nextInt(1, 5);
 			if (colorNumber == 1) {
 				circle.setColor(Color.red);
 			}
@@ -33,8 +33,8 @@ public class Flicker extends GraphicsProgram {
 			if (colorNumber == 4) {
 				circle.setColor(Color.black);
 			}
-			if (colorNumber == 4) {
-				circle.setColor(Color.red);
+			if (colorNumber == 5) {
+				circle.setColor(Color.green);
 			}
 		}
 	}
