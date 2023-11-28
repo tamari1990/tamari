@@ -23,7 +23,7 @@ public class Sorter extends ConsoleProgram {
 						continue;
 					}
 				}
-				
+				continue;
 			}
 		}
 		return newSentence;
