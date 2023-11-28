@@ -26,7 +26,6 @@ public class Flicker extends GraphicsProgram {
 			colorNumber = rgen.nextInt(1, 5);
 			if (colorNumber == 1) {
 				circle.setColor(Color.red);
-				pause(2000);
 				while(colorNumber != 5) {
 				colorNumber = rgen.nextInt(2, 5);
 				}
@@ -43,8 +42,13 @@ public class Flicker extends GraphicsProgram {
 			if (colorNumber == 5) {
 				circle.setColor(Color.green);
 			}
+			if(circle.getColor() != Color.green) {
+				colorNumber = rgen.nextInt(1, 5);
+			}
 		}
 		
 	}
+
+	
 }
 	
