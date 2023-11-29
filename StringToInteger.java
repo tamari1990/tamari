@@ -8,6 +8,7 @@ public class StringToInteger extends ConsoleProgram{
 		String s2 = "" + num;
 		while(!s.equals(s2)) {
 			num++;
+			s2 = "" + num;
 		}
 		println(num);
 	}
