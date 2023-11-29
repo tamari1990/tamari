@@ -23,7 +23,7 @@ public class GeometricProgression extends ConsoleProgram {
 				k = k + i + 1;
 				sInInt = makeS2Int(s2);
 				double p = sInInt / b;
-				b = b + sInInt - 1;
+				//b = b + sInInt - 1;
 				println(p);
 				c = p;
 		/*		if (p != c) {
