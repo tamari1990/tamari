@@ -25,12 +25,12 @@ public class Sorter2 extends ConsoleProgram {
 						newSentence = newSentence + s.substring(j, i + 1);
 						break;
 					} 
-					if(j == 0 && s.charAt(0) != ' ') {
-						newSentence = newSentence + s.substring(0, i + 1);
-					}
+					
 					
 				}
-				
+				if (i == 0 && s.charAt(0) != ' ') {
+                    newSentence = s.substring(0, i + 1) + newSentence;
+                }
 			}
 		}
 		return newSentence;
