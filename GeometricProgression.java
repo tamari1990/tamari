@@ -13,7 +13,7 @@ public class GeometricProgression extends ConsoleProgram {
 				break;
 			}
 		}
-		
+		println(s);
 	}
 	
 
