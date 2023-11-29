@@ -14,7 +14,7 @@ public class Sorter extends ConsoleProgram {
         int num = 1;
         String number = "" + num;
         char index = number.charAt(0);
-        String newSentence = "";
+        String newSentence = " ";
 
         for (int i = 0; i < s.length(); i++) {
             if (Character.isDigit(s.charAt(i))) {
