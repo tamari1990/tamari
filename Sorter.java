@@ -20,7 +20,7 @@ public class Sorter extends ConsoleProgram {
             if (Character.isDigit(s.charAt(i))) {
                 num = Character.getNumericValue(s.charAt(i));
                 for (int j = i; j >= 0; j--) {
-                    if (s.charAt(j) == ' ' || j == 0) {
+                    if (j == 0 || s.charAt(j - 1) == ' ') {
                         newSentence = s.substring(j, i + 1) + newSentence;
                         break;
                     }
