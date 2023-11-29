@@ -25,6 +25,7 @@ public class Sorter2 extends ConsoleProgram {
 				}
 			}else{
 				newSentence = newSentence + s.substring(0, i + 1);
+				break;
 			}
 		}
 		return newSentence;
