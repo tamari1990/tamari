@@ -25,7 +25,7 @@ public class GeometricProgression extends ConsoleProgram {
 				double p = sInInt / b;
 				//b = b + sInInt - 1;
 				println(sInInt);
-				c = p;
+				//c = p;
 		/*		if (p != c) {
 					println("false");
 					break;
