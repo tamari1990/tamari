@@ -21,12 +21,11 @@ public class Sorter2 extends ConsoleProgram {
 			if (s.charAt(i) == index) {
 				for (int j = i; j >= 0; j--) {
 					if (s.charAt(j) == ' ') {
-						newSentence = newSentence + s.substring(j, i + 1);					
-					} else{
-						n++;
-					}
+						newSentence = newSentence + s.substring(j, i + 1);
+						break;
+					} n++;
 				}
-				if(n == 1) {
+				if(n == i + 1) {
 					newSentence = newSentence + s.substring(0, i);
 				}
 			}
