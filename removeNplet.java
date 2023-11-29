@@ -19,6 +19,7 @@ public class removeNplet extends ConsoleProgram {
 				//	numOfMatches++;
 					k++;
 					s0 = s0 + s.substring(0, i) + s.substring(i + k, s.length());
+					println(s0);
 				}
 			}
 		}
