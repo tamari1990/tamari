@@ -28,6 +28,6 @@ public class Sorter extends ConsoleProgram {
             }
         }
 
-        return newSentence.trim(); // Trim to remove leading space
+        return newSentence.trim; // Trim to remove leading space
     }
 }
