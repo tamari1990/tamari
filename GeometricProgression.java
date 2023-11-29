@@ -15,11 +15,6 @@ public class GeometricProgression extends ConsoleProgram {
 		}
 		
 	}
-	private boolean isGeometricProgression( int n, String s) {
-		for(int i = 0; i < s.length(); i++) {
-			
-		}
-		return true;
-	}
+	
 
 }
