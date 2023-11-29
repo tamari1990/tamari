@@ -15,8 +15,9 @@ public class GeometricProgression extends ConsoleProgram {
 		}
 		int n = 1;
 		String s2 = "";
+		int k = 0;
 		for(int i = 0; i < s.length(); i++) {
-			int k = 0;
+			
 			if(s.charAt(i) == ' ') {
 				s2 = s.substring(k, i);
 				k = k + i + 1;
