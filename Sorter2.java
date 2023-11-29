@@ -25,8 +25,8 @@ public class Sorter2 extends ConsoleProgram {
 					} 
 					n++;
 				}
-				if(n == i - 1) {
-					newSentence = newSentence + s.substring(0, i);
+				if(n == i) {
+					newSentence = newSentence + s.substring(0, i + 1);
 				}
 			}
 		}
