@@ -9,6 +9,7 @@ public class Print1 extends ConsoleProgram {
 		String s = "shalaxo";
 		println(iseRa(x, y, o, s));
 		println(iseRa(x, y, o, s));
+		println(12 / 5 + 2.4 / 2 + 2 / 5);
 	}
 
 	private int iseRa(int x, double y, GObject r, String s){
