@@ -10,15 +10,14 @@ public class removeNplet extends ConsoleProgram {
 	}
 
 	private String removeNplets(String s, int n) {
-		String s0 = "";
+		String s0 = "bla";
 		for (int i = 0; i < s.length(); i++) {
 			int k = 1;
 			//int numOfMatches = 0;
 			while (k != n - 1) {
 				if (s.charAt(i + k) == s.charAt(i)) {
 				//	numOfMatches++;
-					k++;
-					
+					k++;				
 				}
 				
 			}
