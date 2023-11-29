@@ -1,6 +1,7 @@
 import acm.program.ConsoleProgram;
 
 public class GeometricProgression extends ConsoleProgram {
+	private int sInInt;
 	public void run() {
 		String s = "";
 		while (true) {
@@ -12,7 +13,7 @@ public class GeometricProgression extends ConsoleProgram {
 				break;
 			}
 		}
-		double b = 1;
+		double b = sInInt;
 		String s2 = "";
 		int k = 0;
 		double c = 0;
@@ -20,7 +21,7 @@ public class GeometricProgression extends ConsoleProgram {
 			if (s.charAt(i) == ' ') {
 				s2 = s.substring(k, i);
 				k = k + i + 1;
-				int sInInt = makeS2String(s2);
+				sInInt = makeS2Int(s2);
 				double p = sInInt / b;
 				b = b + sInInt - 1;
 				println(p);
@@ -33,7 +34,7 @@ public class GeometricProgression extends ConsoleProgram {
 		}
 	}
 
-	private int makeS2String(String s2) {
+	private int makeS2Int(String s2) {
 		int num = 0;
 		String s3 = "" + num;
 		while (!s2.equals(s3)) {
