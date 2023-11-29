@@ -12,6 +12,7 @@ public class Sorter2 extends ConsoleProgram {
 	}
 
 	private String sortTheSentence(String s) {
+		int n = 0;
 		num++;
 		String number = "" + num;
 		char index = number.charAt(0);
@@ -22,9 +23,11 @@ public class Sorter2 extends ConsoleProgram {
 					if (s.charAt(j) == ' ') {
 						newSentence = newSentence + s.substring(j, i + 1);					
 					} else{
-						newSentence = newSentence + s.substring(0, i + 1);
-						break;
+						n++;
 					}
+				}
+				if(n == i + 1) {
+					newSentence = newSentence + s.substring(0, i);
 				}
 			}
 		}
