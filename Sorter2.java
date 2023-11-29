@@ -19,6 +19,7 @@ public class Sorter2 extends ConsoleProgram {
 		String newSentence = "";
 		for (int i = 0; i < s.length(); i++) {
 			if (s.charAt(i) == index) {
+				n = 0;
 				for (int j = i; j >= 0; j--) {
 					if (s.charAt(j) == ' ') {
 						newSentence = newSentence + s.substring(j, i + 1);
