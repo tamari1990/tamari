@@ -26,6 +26,8 @@ public class Sorter extends ConsoleProgram {
 							s2 = s2 + sentence.substring(0, i);
 							break;
 						}
+					} 
+						
 					}
 				}
 			}
