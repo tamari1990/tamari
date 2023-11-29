@@ -19,7 +19,7 @@ public class GeometricProgression extends ConsoleProgram {
 			int k = 0;
 			if(s.charAt(i) == ' ') {
 				s2 = s.substring(k, i);
-				k = k + i + 2;
+				k = k + i + 1;
 				println(s2);
 			}
 		}
