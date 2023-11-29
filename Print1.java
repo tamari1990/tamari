@@ -12,10 +12,10 @@ public class Print1 extends ConsoleProgram {
 	}
 
 	private int iseRa(int x, double y, GObject r, String s){
-	x++;
-	y += 1;
+	x++;    // X = 2;   x = 3;
+	y += 1;  // Y = 3;  y = 4;
 	r.move(x,y);
-	s = s.substring(s.indexOf('a'));
+	s = s.substring(s.indexOf('a')); // S = "alaxo" length = 5;
 	return (int)(x + y + r.getX() + s.length());
 	}
 	}
