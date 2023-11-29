@@ -12,7 +12,7 @@ public class GeometricProgression extends ConsoleProgram {
 				break;
 			}
 		}
-		int b = 0;
+		int b = 1;
 		String s2 = "";
 		int k = 0;
 		for(int i = 0; i < s.length(); i++) {
@@ -21,7 +21,7 @@ public class GeometricProgression extends ConsoleProgram {
 				k = k + i + 1;
 				int sInInt = makeS2String(s2);
 				double p = sInInt / b;
-				b = b + sInInt;
+				b = b + sInInt - 1;
 				println(p);
 			}
 		}
