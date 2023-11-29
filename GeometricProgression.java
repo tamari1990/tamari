@@ -18,7 +18,7 @@ public class GeometricProgression extends ConsoleProgram {
 		for(int i = 0; i < s.length(); i++) {
 			if(s.charAt(i) == ' ') {
 				s2 = s.substring(0, i);
-				println(s2);
+				break;
 			}
 		}
 	}
