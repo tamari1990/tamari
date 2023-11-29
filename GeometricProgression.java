@@ -15,14 +15,19 @@ public class GeometricProgression extends ConsoleProgram {
 		int b = 1;
 		String s2 = "";
 		int k = 0;
-		for(int i = 0; i < s.length(); i++) {
-			if(s.charAt(i) == ' ') {
+		int c = 0;
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == ' ') {
 				s2 = s.substring(k, i);
 				k = k + i + 1;
 				int sInInt = makeS2String(s2);
 				int p = sInInt / b;
+				if (p != c) {
+					println("false");
+				}
 				b = b + sInInt - 1;
 				println(p);
+				c = p;
 			}
 		}
 	}
@@ -30,12 +35,11 @@ public class GeometricProgression extends ConsoleProgram {
 	private int makeS2String(String s2) {
 		int num = 0;
 		String s3 = "" + num;
-		while(!s2.equals(s3)) {
+		while (!s2.equals(s3)) {
 			num++;
 			s3 = "" + num;
 		}
 		return num;
 	}
-	
 
 }
