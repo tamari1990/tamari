@@ -22,13 +22,13 @@ public class GeometricProgression extends ConsoleProgram {
 				k = k + i + 1;
 				int sInInt = makeS2String(s2);
 				int p = sInInt / b;
+				b = b + sInInt - 1;
+				println(p);
+				c = p;
 				if (p != c) {
 					println("false");
 					break;
 				}
-				b = b + sInInt - 1;
-				println(p);
-				c = p;
 			}
 		}
 	}
