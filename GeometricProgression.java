@@ -17,13 +17,23 @@ public class GeometricProgression extends ConsoleProgram {
 		String s2 = "";
 		int k = 0;
 		for(int i = 0; i < s.length(); i++) {
-			
 			if(s.charAt(i) == ' ') {
 				s2 = s.substring(k, i);
 				k = k + i + 1;
-				println(s2);
+				int sInInt = makeS2String(s2);
+				println(sInInt);
 			}
 		}
+	}
+
+	private int makeS2String(String s2) {
+		int num = 0;
+		String s3 = "" + num;
+		while(!s2.equals(s3)) {
+			num++;
+			s2 = "" + num;
+		}
+		return num;
 	}
 	
 
