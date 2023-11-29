@@ -13,10 +13,10 @@ public class removeNplet extends ConsoleProgram {
 		String s0 = "";
 		for (int i = 0; i < s.length(); i++) {
 			int k = 1;
-			int numOfMatches = 0;
+			//int numOfMatches = 0;
 			while (k != n - 1) {
 				if (s.charAt(i + k) == s.charAt(i)) {
-					numOfMatches++;
+				//	numOfMatches++;
 					k++;
 					s0 = s0 + s.substring(0, i) + s.substring(i + k, s.length());
 				}
