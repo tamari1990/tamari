@@ -12,15 +12,15 @@ public class GeometricProgression extends ConsoleProgram {
 				break;
 			}
 		}
-		double b = 1;
+		int b = 1;
 		String s2 = "";
 		int k = 0;
 		for(int i = 0; i < s.length(); i++) {
 			if(s.charAt(i) == ' ') {
 				s2 = s.substring(k, i);
 				k = k + i + 1;
-				double sInInt = makeS2String(s2);
-				double p = sInInt / b;
+				int sInInt = makeS2String(s2);
+				int p = sInInt / b;
 				b = b + sInInt - 1;
 				println(p);
 			}
