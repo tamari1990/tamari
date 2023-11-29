@@ -25,11 +25,11 @@ public class GeometricProgression extends ConsoleProgram {
 				b = b + sInInt - 1;
 				println(p);
 				c = p;
-				if (p != c) {
+		/*		if (p != c) {
 					println("false");
 					break;
 				}
-			}
+			*/}
 		}
 	}
 
