@@ -22,10 +22,10 @@ public class Sorter2 extends ConsoleProgram {
 				for (int j = i; j >= 0; j--) {
 					if (s.charAt(j) == ' ') {
 						newSentence = newSentence + s.substring(j, i + 1);
-						
-					} n++;
+					} 
+					n++;
 				}
-				if(n == i + 1) {
+				if(n == i) {
 					newSentence = newSentence + s.substring(0, i);
 				}
 			}
