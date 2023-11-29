@@ -31,7 +31,7 @@ public class GeometricProgression extends ConsoleProgram {
 		String s3 = "" + num;
 		while(!s2.equals(s3)) {
 			num++;
-			s2 = "" + num;
+			s3 = "" + num;
 		}
 		return num;
 	}
