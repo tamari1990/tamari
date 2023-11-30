@@ -14,7 +14,7 @@ public class ArithmeticProgression extends ConsoleProgram {
 			if (a - a2 != d) {
 				a2 = a;
 				continue;
-			}
+			} 
 		}  println("no");
 	}
 
