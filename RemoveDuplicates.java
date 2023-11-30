@@ -6,7 +6,6 @@ public class RemoveDuplicates extends ConsoleProgram{
 		String s = readLine("enter text: ");
 		removeDuplicates(s);
 	}
-	//abbg
 	private void removeDuplicates(String s) {
 		String s2 = "";
 		for(int i = 0; i < s.length(); i++) {
