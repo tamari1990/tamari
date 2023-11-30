@@ -1,5 +1,4 @@
 import java.awt.event.MouseEvent;
-
 import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
@@ -12,15 +11,10 @@ public class Green extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private GOval circle;
 	private GObject obj;
-
+	private int matches;
 	public void run() {
 		addMouseListeners();
-		int matches = 0;
-		for(int j = 0; j < 3; j++) {
-			if(obj != null) {
-				matches++;
-			}
-		}
+		matches = 0;
 		if(matches == 3) {
 			remove(obj);
 		}
@@ -44,6 +38,9 @@ public class Green extends GraphicsProgram {
 
 	public void mouseClicked(MouseEvent e) {
 		obj = getElementAt(e.getX(), e.getY());
+		if(obj != null) {
+			matches++;
+		}
 	}
 
 }
