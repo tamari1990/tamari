@@ -34,14 +34,14 @@ public class Green extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		int matches = 0;
 		GObject obj = getElementAt(e.getX(), e.getY());
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 3; i++) {
 			int x = e.getX();
 			int y = e.getY();
 			if (getElementAt(x, y) == obj) {
 				matches++;
 			}
 		}
-		if(matches == 2) {
+		if(matches == 3) {
 			remove(obj);
 		}
 	}
