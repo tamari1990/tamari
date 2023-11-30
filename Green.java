@@ -39,6 +39,8 @@ public class Green extends GraphicsProgram {
 		obj = getElementAt(x, y);
 		if(obj != null) {
 			matches++;
+		}
+		if(matches >= 3) {
 			remove(obj);
 		}
 	}
