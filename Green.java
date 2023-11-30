@@ -30,15 +30,14 @@ public class Green extends GraphicsProgram {
 		}
 	}
 	public void mouseClicked(MouseEvent e) {
-		int x = e.getX();
-		int y = e.getY();
-		int clicks = 0;
-		GObject obj = getElementAt(x, y);
 		for(int i = 0; i < 3; i++) {
-		if(obj != circle) {
-			break;
-		}
-		remove(circle);
+			int x = e.getX();
+			int y = e.getY();
+			GObject obj = getElementAt(x, y);
+			if(obj != circle) {
+				break;
+			}
+			remove(obj);
 		}
 	}
 
