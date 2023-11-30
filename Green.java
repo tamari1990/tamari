@@ -40,6 +40,7 @@ public class Green extends GraphicsProgram {
 		obj = getElementAt(e.getX(), e.getY());
 		if(obj != null) {
 			matches++;
+			remove(obj);
 		}
 	}
 
