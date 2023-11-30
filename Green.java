@@ -37,7 +37,7 @@ public class Green extends GraphicsProgram {
 		for (int i = 0; i < 3; i++) {
 			int x = e.getX();
 			int y = e.getY();
-			if (getElementAt(x, y) == obj) {
+			if (getElementAt(x, y) != null) {
 				matches++;
 			}
 		}
