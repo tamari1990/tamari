@@ -8,14 +8,16 @@ public class ArithmeticProgression extends ConsoleProgram {
 		int d = a2 - a1;
 		while (true) {
 			int a = readInt("enter an integer: ");
+			if(a - a2 != a2) {
+				boolean isProgression = false;
+			}
 			if (a == -1) {
 				break;
 			}
-			if (a - a2 != d) {
-				a2 = a;
-				continue;
-			} 
-		}  println("no");
-	}
 
+		}
+		boolean isProgression = true;
+		println(isProgression);
+	}
+	
 }
