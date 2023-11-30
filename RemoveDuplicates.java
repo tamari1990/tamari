@@ -14,6 +14,7 @@ public class RemoveDuplicates extends ConsoleProgram{
 			while(s.charAt(i) != s.charAt(i + j)) {
 				j++;
 				s2 = s2 + s.substring(0, i) + s.substring(j, s.length());
+				println(s2);
 			}
 		}
 		println(s2);
