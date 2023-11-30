@@ -15,7 +15,7 @@ public class Green extends GraphicsProgram {
 	public void run() {
 		addMouseListeners();
 		matches = 0;
-		if(matches == 3) {
+		if(matches == 1) {
 			remove(obj);
 		}
 		for (int i = 0; i < CIRCLE_NUM; i++) {
