@@ -20,7 +20,7 @@ public class GeometricProgression extends ConsoleProgram {
 		for (int i = 0; i < s.length() - 1; i++) {
 			if (s.charAt(i) == ' ') {
 				s2 = s.substring(k, i);
-				k = k + i + 1;
+				k = i + 1;
 				sInInt = makeS2Int(s2);
 				double p = sInInt / b;
 				//b = b + sInInt - 1;
