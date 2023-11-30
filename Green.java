@@ -11,9 +11,19 @@ public class Green extends GraphicsProgram {
 	private final static int DELAY = 2000;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private GOval circle;
+	private GObject obj;
 
 	public void run() {
 		addMouseListeners();
+		int matches = 0;
+		for(int j = 0; j < 3; j++) {
+			if(obj != null) {
+				matches++;
+			}
+		}
+		if(matches == 3) {
+			remove(obj);
+		}
 		for (int i = 0; i < CIRCLE_NUM; i++) {
 			circle = new GOval(CIRCLE_D, CIRCLE_D);
 			double x = rgen.nextDouble(0, getWidth() - CIRCLE_D);
@@ -29,21 +39,11 @@ public class Green extends GraphicsProgram {
 			add(circle, x, y);
 			pause(DELAY);
 		}
+
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		int matches = 0;
-		GObject obj = getElementAt(e.getX(), e.getY());
-		for (int i = 0; i < 3; i++) {
-			int x = e.getX();
-			int y = e.getY();
-			if (getElementAt(x, y) != null) {
-				matches++;
-			}
-		}
-		if(matches == 3) {
-			remove(obj);
-		}
+		obj = getElementAt(e.getX(), e.getY());
 	}
 
 }
