@@ -41,7 +41,7 @@ public class Green extends GraphicsProgram {
 				matches++;
 			}
 		}
-		if(matches == 2) {
+		if(matches == 3) {
 			remove(obj);
 		}
 	}
