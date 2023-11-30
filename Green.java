@@ -16,6 +16,13 @@ public class Green extends GraphicsProgram {
 			circle.setFilled(true);
 			add(circle, x, y);
 		}
+		while(true) {
+			GOval circle = new GOval (CIRCLE_D, CIRCLE_D);
+			double x = rgen.nextDouble(0, getWidth() - CIRCLE_D);
+			double y = rgen.nextDouble(0, getHeight() - CIRCLE_D);
+			circle.setFilled(true);
+			add(circle, x, y);
+		}
 	}
 
 }
