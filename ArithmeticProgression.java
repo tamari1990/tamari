@@ -8,7 +8,7 @@ public class ArithmeticProgression extends ConsoleProgram {
 		int d = a2 - a1;
 		while (true) {
 			int a = readInt("enter an integer: ");
-			if(a - a2 != a2) {
+			if(a - a2 != d) {
 				boolean isProgression = false;
 				a2 = a;				
 			}
