@@ -9,6 +9,7 @@ public class ArithmeticProgression extends ConsoleProgram{
 		while(true) {
 			int a = readInt("enter an integer: ");
 			if(a - a2 == d) {
+				a2 = a;
 				continue;
 			}	else{
 				println("no");
