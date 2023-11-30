@@ -8,9 +8,11 @@ public class ArithmeticProgression extends ConsoleProgram{
 		int d = a2 - a1;
 		while(true) {
 			int a = readInt("enter an integer: ");
-			if(a - a2 != d) {
-				println("this is not an arithmetic progression");
-			}	println("this is an arithmetic progression");
+			if(a - a2 == d) {
+				continue;
+			}	else{
+				println("no");
+			}
 			if(a == -1) {
 				break;
 			}
