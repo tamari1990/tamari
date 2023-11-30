@@ -22,6 +22,7 @@ public class Green extends GraphicsProgram {
 			double y = rgen.nextDouble(0, getHeight() - CIRCLE_D);
 			circle.setFilled(true);
 			add(circle, x, y);
+			pause(DELAY);
 		}
 	}
 
