@@ -9,7 +9,7 @@ public class ArithmeticProgression extends ConsoleProgram {
         boolean isProgression = true;
 
         while (true) {
-            int a = readInt("Enter an integer (-1 to stop): ");
+            int a = readInt("Enter an integer: ");
             
             if (a == -1) {
                 break;
