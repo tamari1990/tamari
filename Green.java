@@ -12,6 +12,7 @@ public class Green extends GraphicsProgram {
 	private GOval circle;
 	private GObject obj;
 	private int matches;
+
 	public void run() {
 		addMouseListeners();
 		matches = 0;
@@ -36,13 +37,20 @@ public class Green extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		int x = e.getX();
 		int y = e.getY();
-		obj = getElementAt(x, y);
-		if(obj != null) {
-			matches++;
-		}
-		if(matches >= 3) {
-			remove(obj);
+		GObject clickedObj = getElementAt(x, y);
+
+		if (clickedObj != null) {
+			if (clickedObj != obj) {
+				matches = 1;
+				obj = clickedObj;
+			} else {
+				matches++;
+			}
+
+			if (matches >= 3) {
+				remove(obj);
+				matches = 0; // Reset the counter after removing the circle
+			}
 		}
 	}
-
 }
