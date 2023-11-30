@@ -38,7 +38,6 @@ public class Green extends GraphicsProgram {
 		int x = e.getX();
 		int y = e.getY();
 		GObject clickedObj = getElementAt(x, y);
-
 		if (clickedObj != null) {
 			if (clickedObj != obj) {
 				matches = 1;
@@ -46,10 +45,9 @@ public class Green extends GraphicsProgram {
 			} else {
 				matches++;
 			}
-
 			if (matches >= 3) {
 				remove(obj);
-				matches = 0; // Reset the counter after removing the circle
+				matches = 0; 
 			}
 		}
 	}
