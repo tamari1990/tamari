@@ -1,6 +1,7 @@
 import acm.program.ConsoleProgram;
 
-public class Duplicates extends ConsoleProgram {
+public class 
+Duplicates extends ConsoleProgram {
 
     public void run() {
         String s = readLine("Enter text: ");
