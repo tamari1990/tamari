@@ -11,8 +11,8 @@ public class Green extends GraphicsProgram {
 	public void run() {
 		for(int i = 0; i < CIRCLE_NUM; i++) {
 			GOval circle = new GOval (CIRCLE_D, CIRCLE_D);
-			double x = rgen.nextDouble(0, getWidth());
-			double y = rgen.nextDouble(0, getHeight());
+			double x = rgen.nextDouble(0, getWidth() - CIRCLE_D);
+			double y = rgen.nextDouble(0, getHeight() - CIRCLE_D);
 			add(circle, x, y);
 			pause(DELAY);
 		}
