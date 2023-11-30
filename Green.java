@@ -15,9 +15,6 @@ public class Green extends GraphicsProgram {
 	public void run() {
 		addMouseListeners();
 		matches = 0;
-		if(matches == 1) {
-			remove(obj);
-		}
 		for (int i = 0; i < CIRCLE_NUM; i++) {
 			circle = new GOval(CIRCLE_D, CIRCLE_D);
 			double x = rgen.nextDouble(0, getWidth() - CIRCLE_D);
@@ -37,7 +34,9 @@ public class Green extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		obj = getElementAt(e.getX(), e.getY());
+		int x = e.getX();
+		int y = e.getY();
+		obj = getElementAt(x, y);
 		if(obj != null) {
 			matches++;
 			remove(obj);
