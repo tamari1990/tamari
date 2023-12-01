@@ -4,6 +4,7 @@ public class NumberPalyndrom extends ConsoleProgram{
 	
 	public void run() {
 		int n = readInt("enter a number: ");
+		int m = n;
 		int powersOfTen = 0;
 		boolean isPalyndrom = true;
 			while(Math.pow(10, (powersOfTen + 1)) <= n) {
@@ -12,7 +13,9 @@ public class NumberPalyndrom extends ConsoleProgram{
 		 for(int i = 0; i <= powersOfTen ; i ++) {
 			 int firstDigit = (int) (n / Math.pow(10,  powersOfTen - i));
 			 n =(int) (n - firstDigit * Math.pow(10, powersOfTen - i));
-			 println(firstDigit);
+			 int lastDigit = (int) (m % Math.pow(10,  powersOfTen - i));
+			 m = (int) (m / Math.pow(10, 1));
+			 println(lastDigit);
 		 }
 		 //println(isPalyndrom);
 	}
