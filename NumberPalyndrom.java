@@ -14,7 +14,7 @@ public class NumberPalyndrom extends ConsoleProgram{
 			 n = firstDigit;
 			 println(firstDigit);
 		 }
-		 println(isPalyndrom);
+		 //println(isPalyndrom);
 	}
 
 }
