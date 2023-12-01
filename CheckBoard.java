@@ -7,7 +7,7 @@ import acm.program.GraphicsProgram;
 public class CheckBoard extends GraphicsProgram {
 	private static final int N_ROWS = 8;
 	private static final int N_COLUMNS = 8;
-	private GRect rect1 = null;
+	private GRect lastClickedRect = null;
 	private GRect rect2 = null;
 
 	public void run() {
@@ -28,15 +28,14 @@ public class CheckBoard extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		while (true) {
-			GRect rect = (GRect) getElementAt(e.getX(), e.getY());
-			if(rect1.isFilled()) {
-				rect1.setFilled(false);
-				}
+		GRect rect = (GRect) getElementAt(e.getX(), e.getY());
+		if (rect != null) {
+			if (lastClickedRect != null && lastClickedRect.isFilled()) {
+				lastClickedRect.setFilled(false);
+			}
 			if (!rect.isFilled()) {
 				rect.setFilled(true);
-				//rect1 = rect;
-				rect2 = rect;
+				lastClickedRect = rect;
 			} else {
 				rect.setFilled(false);
 			}
