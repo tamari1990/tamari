@@ -10,7 +10,7 @@ public class NumberPalyndrom extends ConsoleProgram{
 				powersOfTen++;
 			}
 		 for(int i = 0; i < powersOfTen ; i ++) {
-			 int firstDigit = (int) n / Math.pow(10,  powersOfTen - i);
+			 int firstDigit = (int) (n / Math.pow(10,  powersOfTen - i));
 			 n = firstDigit;
 			 println(firstDigit);
 		 }
