@@ -29,10 +29,8 @@ public class CheckBoard extends GraphicsProgram {
 		GRect rect = (GRect) getElementAt(e.getX(), e.getY());
 		if (!rect.isFilled()) {
             rect.setFilled(true);
-            rect.setColor(Color.BLACK);
         } else {
             rect.setFilled(false);
-            rect.setColor(Color.WHITE);
         }
 	}
 
