@@ -11,7 +11,7 @@ public class NumberPalyndrom extends ConsoleProgram{
 			}
 		 for(int i = 0; i < powersOfTen ; i ++) {
 			 int firstDigit = (int) (n / Math.pow(10,  powersOfTen - i));
-			 n = firstDigit;
+			 n =(int) (n - firstDigit * Math.pow(10, powersOfTen - i));
 			 println(firstDigit);
 		 }
 		 //println(isPalyndrom);
