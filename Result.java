@@ -8,7 +8,7 @@ public class Result extends ConsoleProgram {
 		int y = 2;
 		GOval o = new GOval(2, 1); // width, height
 		println(racxa(x, 2, o));
-		println(racxa(y, x / 2 + x, o));
+		println(racxa(y, x / (2 + x), o));
 	}
 
 	public int racxa(int x, int y, GOval o){
