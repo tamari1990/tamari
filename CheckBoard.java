@@ -1,3 +1,6 @@
+import java.awt.Color;
+import java.awt.event.MouseEvent;
+
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
@@ -6,6 +9,7 @@ public class CheckBoard extends GraphicsProgram{
 	private static final int N_COLUMNS = 8;
 	public void run() {
 		drawTheBoard();
+		addMouseListeners();
 	}
 
 	private void drawTheBoard() {
@@ -19,6 +23,12 @@ public class CheckBoard extends GraphicsProgram{
 		}
 		
 	}
-
+	
+	public void mouseClicked(MouseEvent e) {
+		GRect rect = (GRect) getElementAt(e.getX(), e.getY());
+		if(rect.getColor() == Color.white){
+			rect.setFilled(true);
+		}
+	}
 	
 }
