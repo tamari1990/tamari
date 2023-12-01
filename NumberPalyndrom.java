@@ -5,11 +5,11 @@ public class NumberPalyndrom extends ConsoleProgram{
 	public void run() {
 		int n = readInt("enter a number: ");
 		int powersOfTen = 0;
-		for(int i = 1; i <= n; i ++) {
-			while(Math.pow(10, i) <= n) {
+		
+			while(Math.pow(10, (powersOfTen + 1)) <= n) {
 				powersOfTen++;
 			}
-		} println(powersOfTen);
+		 println(powersOfTen);
 	}
 
 }
