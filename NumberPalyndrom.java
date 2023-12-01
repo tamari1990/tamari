@@ -9,8 +9,7 @@ public class NumberPalyndrom extends ConsoleProgram{
 			while(Math.pow(10, (powersOfTen + 1)) <= n) {
 				powersOfTen++;
 			}
-		 println(powersOfTen);
-		 for(int i = 0; i < powersOfTen; i ++) {
+		 for(int i = 0; i < powersOfTen / 2; i ++) {
 			 if((int) n / Math.pow(10, powersOfTen - i) != (n % Math.pow(10, powersOfTen - i))) {
 				 isPalyndrom = false;
 			 }
