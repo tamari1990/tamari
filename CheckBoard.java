@@ -30,6 +30,9 @@ public class CheckBoard extends GraphicsProgram {
 		if (!rect.isFilled()) {
 			rect.setFilled(true);
 		}
+		if(rect.getColor() == Color.black){
+			rect.setFillColor(white);
+		}
 	}
 
 }
