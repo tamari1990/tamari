@@ -35,7 +35,6 @@ public class CheckBoard extends GraphicsProgram {
 				rect1 = rect;
 				rect2 = rect;
 				if(rect1.isFilled()) {
-				rect.setFilled(true);
 				rect1.setFilled(false);
 				}
 			} else {
