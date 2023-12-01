@@ -11,13 +11,15 @@ public class NumberPalyndrom extends ConsoleProgram{
 				powersOfTen++;
 			}
 		 for(int i = 0; i <= powersOfTen ; i ++) {
-			 int lastDigit = (int) (m % Math.pow(10, 1));
-			 m = (int) (m / Math.pow(10, 1));
+			 int lastDigit = (int) (m % 10);
+			 m = (int) (m / 10);
 			 int firstDigit = (int) (n / Math.pow(10,  powersOfTen - i));
 			 n =(int) (n - firstDigit * Math.pow(10, powersOfTen - i));
-			 println(lastDigit);
+			 if(firstDigit != lastDigit) {
+				 isPalyndrom = false;
+			 }
 		 }
-		 //println(isPalyndrom);
+		 println(isPalyndrom);
 	}
 
 }
