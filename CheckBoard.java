@@ -9,9 +9,9 @@ public class CheckBoard extends GraphicsProgram{
 	}
 
 	private void drawTheBoard() {
-		GRect cube = new GRect(getWidth() / N_ROWS, getHeight() / N_COLUMNS);
 		for(int i = 0; i < N_ROWS; i++) {		
 			for(int j = 0; j < N_COLUMNS; j++) {
+				GRect cube = new GRect(getWidth() / N_ROWS, getHeight() / N_COLUMNS);
 				int x = 0 + i * getWidth() / N_ROWS;
 				int y = 0 + j * getHeight() / N_COLUMNS;
 				add(cube, x, y);
