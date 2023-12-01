@@ -7,6 +7,8 @@ import acm.program.GraphicsProgram;
 public class CheckBoard extends GraphicsProgram {
 	private static final int N_ROWS = 8;
 	private static final int N_COLUMNS = 8;
+	private GRect rect1 = null;
+	private GRect rect2 = null;
 
 	public void run() {
 		drawTheBoard();
@@ -26,12 +28,16 @@ public class CheckBoard extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		GRect rect = (GRect) getElementAt(e.getX(), e.getY());
-		if (!rect.isFilled()) {
-            rect.setFilled(true);
-        } else {
-            rect.setFilled(false);
-        }
+		while (true) {
+			GRect rect = (GRect) getElementAt(e.getX(), e.getY());
+			if (!rect.isFilled() && rect2 != rect1) {
+				rect.setFilled(true);
+				rect1 = rect;
+				rect2 = rect;
+				remove(rect2);
+			} else {
+				rect.setFilled(false);
+			}
+		}
 	}
-
 }
