@@ -26,10 +26,7 @@ public class CheckBoard extends GraphicsProgram{
 	
 	public void mouseClicked(MouseEvent e) {
 		GRect rect = (GRect) getElementAt(e.getX(), e.getY());
-		if(rect.getColor() == null){
-			rect.setFilled(true);
-			rect.setColor(Color.BLACK);
-		}
+		rect.setFilled(true);
 	}
 	
 }
