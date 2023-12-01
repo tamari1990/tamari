@@ -14,8 +14,10 @@ public class Result extends ConsoleProgram {
 	public int racxa(int x, int y, GOval o){
 	String s = "hello world";
 	x = varesiRacxa(x/y, x+(int)o.getHeight(), s); //5; 10
+	println(x);
 	o.scale(2);
-	y = varesiRacxa(x, y+(int)o.getHeight(), s);   //12; 17
+	y = varesiRacxa(x, y+(int)o.getHeight(), s);   //12; 16
+	println(y);
 	return x+y;
 	}
 
