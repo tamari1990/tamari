@@ -30,11 +30,14 @@ public class CheckBoard extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		while (true) {
 			GRect rect = (GRect) getElementAt(e.getX(), e.getY());
-			if (!rect.isFilled() && rect2 != rect1) {
+			if (!rect.isFilled()) {
 				rect.setFilled(true);
 				rect1 = rect;
 				rect2 = rect;
-				remove(rect2);
+				if(rect1.isFilled()) {
+				rect.setFilled(true);
+				rect1.setFilled(false);
+				}
 			} else {
 				rect.setFilled(false);
 			}
