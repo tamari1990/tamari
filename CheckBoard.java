@@ -29,24 +29,20 @@ public class CheckBoard extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		GRect object = (GRect) getElementAt(e.getX(), e.getY());
+	    GRect object = (GRect) getElementAt(e.getX(), e.getY());
 
-		if (lastClickedRect1 == null) {
-			object.setFilled(true);
-			lastClickedRect1 = object;
-		} else {
-			if (lastClickedRect2 == null) {
-				object.setFilled(true);
-				lastClickedRect2 = object;
-			}
-		}
-		if (lastClickedRect1 != null && lastClickedRect2 != null) {
-			lastClickedRect1.setFilled(false);
+	    if (lastClickedRect1 == null) {
+	        object.setFilled(true);
+	        lastClickedRect1 = object;
+	    } else if (lastClickedRect2 == null) {
+	        object.setFilled(true);
+	        lastClickedRect2 = object;
+	    } else {
+	        // Both lastClickedRect1 and lastClickedRect2 are filled, turn the first filled rectangle white
+	        lastClickedRect1.setFilled(false);
 	        object.setFilled(true);
 	        lastClickedRect1 = lastClickedRect2;
 	        lastClickedRect2 = object;
-
-		}
-
+	    }
 	}
 }
