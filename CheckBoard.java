@@ -38,6 +38,13 @@ public class CheckBoard extends GraphicsProgram {
 				object.setFilled(true);
 				lastClickedRect2 = object;
 			}
-		}
+		} 
+			if(lastClickedRect1 != null && lastClickedRect2 != null) {
+				lastClickedRect1.setFilled(false);
+				object.setFilled(true);
+				lastClickedRect1 = lastClickedRect2;
+				
+			}
+		
 	}
 }
