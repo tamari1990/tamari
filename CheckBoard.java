@@ -43,8 +43,8 @@ public class CheckBoard extends GraphicsProgram {
 		if (lastClickedRect1 != null && lastClickedRect2 != null) {
 			lastClickedRect1.setFilled(false);
 	        object.setFilled(true);
-	        lastClickedRect1 = object;
-	        lastClickedRect2 = null;
+	        lastClickedRect1 = lastClickedRect2;
+	        lastClickedRect2 = object;
 
 		}
 
