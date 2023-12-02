@@ -30,22 +30,23 @@ public class CheckBoard extends GraphicsProgram {
 
 	public void mouseClicked(MouseEvent e) {
 		GRect object = (GRect) getElementAt(e.getX(), e.getY());
-		while (true) {
-			if (lastClickedRect1 == null) {
-				object.setFilled(true);
-				lastClickedRect1 = object;
-			} else {
-				if (lastClickedRect2 == null) {
-					object.setFilled(true);
-					lastClickedRect2 = object;
-				}
-			}
-			if (lastClickedRect1 != null && lastClickedRect2 != null) {
-				lastClickedRect1.setFilled(false);
-				object.setFilled(true);
-				lastClickedRect1 = lastClickedRect2;
 
+		if (lastClickedRect1 == null) {
+			object.setFilled(true);
+			lastClickedRect1 = object;
+		} else {
+			if (lastClickedRect2 == null) {
+				object.setFilled(true);
+				lastClickedRect2 = object;
 			}
 		}
+		if (lastClickedRect1 != null && lastClickedRect2 != null) {
+			lastClickedRect1.setFilled(false);
+	        object.setFilled(true);
+	        lastClickedRect1 = object;
+	        lastClickedRect2 = null;
+
+		}
+
 	}
 }
