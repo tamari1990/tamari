@@ -1,6 +1,7 @@
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 
+import acm.graphics.GObject;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
@@ -28,18 +29,10 @@ public class CheckBoard extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		GRect rect = (GRect) getElementAt(e.getX(), e.getY());
-		if (rect != null) {
-			if (lastClickedRect1 != null && lastClickedRect1.isFilled()) {
-				lastClickedRect1.setFilled(false);
-			}
-			if (!rect.isFilled()) {
-				rect.setFilled(true);
-				lastClickedRect1 = rect;
-			} else {
-				rect.setFilled(false);
-				lastClickedRect2 = rect;
-			}
+		GRect object = (GRect)getElementAt(e.getX(), e.getY());
+		if(lastClickedRect1 == null && lastClickedRect2 == null) {
+			object.setFilled(true);
+			lastClickedRect1 = object;
 		}
 	}
 }
