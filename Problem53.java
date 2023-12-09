@@ -37,7 +37,17 @@ public class Problem53 extends ConsoleProgram {
 				numOfSymbols++;
 			}
 		}
-		println(numOfSymbols);	
+		println(numOfSymbols);
+		int numOfLines = 1;
+		for(int j = 0; j < text.length(); j++){
+			String s = "" + text.charAt(j) + text.charAt(j + 1);
+			if(s.equals("/n")){
+				numOfLines++;
+			}
+			
+		}
+		println(numOfLines);
 	}
+		
 
 }
