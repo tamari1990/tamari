@@ -37,13 +37,14 @@ public class Problem53 extends ConsoleProgram {
 				numOfSymbols++;
 			}
 		}
-		println(numOfSymbols);
 		int numOfLines = 1;
 		for (int j = 0; j < text.length() - 1; j++) {
 			if (text.charAt(j) == '\n') {
 				numOfLines++;
 			}
 		}
+		numOfSymbols = numOfSymbols - numOfLines;
+		println(numOfSymbols);
 		println(numOfLines);
 
 	}
