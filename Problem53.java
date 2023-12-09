@@ -52,7 +52,7 @@ public class Problem53 extends ConsoleProgram {
 				numOfWords++;
 			}
 		}
-		numOfWords -= numOfLines;
+		numOfWords += numOfLines;
 		println(numOfWords);
 	}
 }
