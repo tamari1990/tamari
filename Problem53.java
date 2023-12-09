@@ -46,6 +46,7 @@ public class Problem53 extends ConsoleProgram {
 		numOfSymbols = numOfSymbols - numOfLines;
 		println(numOfSymbols);
 		println(numOfLines);
+		int numOfWords = 0;
 
 	}
 }
