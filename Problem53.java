@@ -17,8 +17,8 @@ public class Problem53 extends ConsoleProgram {
 					break;
 				}
 				text = text + newLine + "/n";
-				println(text);
 			}
+			println(text);
 			rd.close();
 			countStatistics(text);
 		} catch (FileNotFoundException e) {
