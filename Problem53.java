@@ -44,15 +44,36 @@ public class Problem53 extends ConsoleProgram {
 			}
 		}
 		numOfSymbols = numOfSymbols - numOfLines;
-		println(numOfSymbols);
-		println(numOfLines);
+		println("number of symbols is: " + numOfSymbols);
+		println("number of lines is: " + numOfLines);
 		int numOfWords = 0;
-		for(int k = 0; k < text.length(); k++){
-			if(text.charAt(k) == ' '){
+		for (int k = 0; k < text.length(); k++) {
+			if (text.charAt(k) == ' ') {
 				numOfWords++;
 			}
 		}
 		numOfWords += numOfLines;
-		println(numOfWords);
+		println("number of words is: " + numOfWords);
+		int numOfDots = 0;
+		for (int m = 0; m < text.length(); m++) {
+			if (text.charAt(m) == '.') {
+				numOfDots++;
+			}
+			println("number of dots is: " + numOfDots);
+		}
+		int numOfQuestionMarks = 0;
+		for (int n = 0; n < text.length(); n++) {
+			if (text.charAt(n) == '?') {
+				numOfQuestionMarks++;
+			}
+			println("number of question marks is: " + numOfQuestionMarks);
+		}
+		int numOfExclamations = 0;
+		for (int p = 0; p < text.length(); p++) {
+			numOfExclamations++;
+		}
+		println(numOfExclamations);
+		int numOfSentences = numOfDots + numOfQuestionMarks + numOfExclamations;
+		println("number of sentences is: " + numOfSentences);
 	}
 }
