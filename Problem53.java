@@ -17,6 +17,7 @@ public class Problem53 extends ConsoleProgram {
 					break;
 				}
 				text = text + newLine + "/n";
+				println(text);
 			}
 			rd.close();
 			countStatistics(text);
@@ -36,8 +37,7 @@ public class Problem53 extends ConsoleProgram {
 				numOfSymbols++;
 			}
 		}
-		println(numOfSymbols);
-		
+		println(numOfSymbols);	
 	}
 
 }
