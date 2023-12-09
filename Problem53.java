@@ -47,6 +47,12 @@ public class Problem53 extends ConsoleProgram {
 		println(numOfSymbols);
 		println(numOfLines);
 		int numOfWords = 0;
-
+		for(int k = 0; k < text.length(); k++){
+			if(text.charAt(k) == ' '){
+				numOfWords++;
+			}
+		}
+		numOfWords -= numOfLines;
+		println(numOfWords);
 	}
 }
