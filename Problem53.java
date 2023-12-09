@@ -32,22 +32,19 @@ public class Problem53 extends ConsoleProgram {
 
 	private void countStatistics(String text) {
 		int numOfSymbols = 0;
-		for(int i = 0; i < text.length(); i++){
-			if(text.charAt(i) != ' '){
+		for (int i = 0; i < text.length(); i++) {
+			if (text.charAt(i) != ' ') {
 				numOfSymbols++;
 			}
 		}
 		println(numOfSymbols);
 		int numOfLines = 1;
-		for(int j = 0; j < text.length(); j++){
-			String s = "" + text.charAt(j) + text.charAt(j + 1);
-			if(s.equals("/n")){
+		for (int j = 0; j < text.length() - 1; j++) {
+			if (text.charAt(j) == '\n') {
 				numOfLines++;
 			}
-			
+			println(numOfLines);
 		}
-		println(numOfLines);
-	}
-		
 
+	}
 }
