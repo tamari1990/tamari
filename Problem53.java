@@ -43,8 +43,8 @@ public class Problem53 extends ConsoleProgram {
 			if (text.charAt(j) == '\n') {
 				numOfLines++;
 			}
-			println(numOfLines);
 		}
+		println(numOfLines);
 
 	}
 }
