@@ -16,7 +16,7 @@ public class Problem53 extends ConsoleProgram {
 				if (newLine == null) {
 					break;
 				}
-				text = text + newLine + "/n";
+				text = text + newLine + "\n";
 			}
 			println(text);
 			rd.close();
