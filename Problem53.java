@@ -58,7 +58,7 @@ public class Problem53 extends ConsoleProgram {
 		for (int m = 0; m < text.length(); m++) {
 			if (text.charAt(m) == '.') {
 				numOfDots++;
-			}			
+			}
 		}
 		println("number of dots is: " + numOfDots);
 		int numOfQuestionMarks = 0;
@@ -70,9 +70,11 @@ public class Problem53 extends ConsoleProgram {
 		println("number of question marks is: " + numOfQuestionMarks);
 		int numOfExclamations = 0;
 		for (int p = 0; p < text.length(); p++) {
-			numOfExclamations++;
+			if (text.charAt(p) == '!') {
+				numOfExclamations++;
+			}
 		}
-		println(numOfExclamations);
+		println("number of exclamations is: " + numOfExclamations);
 		int numOfSentences = numOfDots + numOfQuestionMarks + numOfExclamations;
 		println("number of sentences is: " + numOfSentences);
 	}
