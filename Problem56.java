@@ -6,10 +6,13 @@ public class Problem56 extends ConsoleProgram {
 		int n = readInt("enter n: ");
 		int[] array = new int[n];
 		for (int i = 0; i < n; i++) {
-			array[i] = readInt("enter number");
+			array[i] = readInt("enter number: ");
 		}
 		int minimum = findMinumum(array);
 		println(minimum);
+		for(int k = 1; k < n - 1; k++){
+			
+		}
 	}
 
 	private int findMinumum(int[] array) {
