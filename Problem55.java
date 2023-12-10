@@ -9,7 +9,7 @@ public class Problem55 extends ConsoleProgram{
 		for(int i = 0; i < n; i++){
 			array[i] = readInt("enter a number : ");
 		}
-		for(int i = 0; i < array.length - 1; i++){
+		for(int i = 0 ; i < array.length - 1; i++){
 			if(array[i + 1] < array[i]){
 				isSorted = false;
 				break;
