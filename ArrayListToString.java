@@ -9,7 +9,7 @@ public class ArrayListToString extends ConsoleProgram {
 		myArrayList.add("there");
 		String s = "";
 		for (int i = 0; i < myArrayList.size(); i++) {
-			s += myArrayList.get(i);
+			s += " " + myArrayList.get(i);
 		}
 		println(s);
 	}
