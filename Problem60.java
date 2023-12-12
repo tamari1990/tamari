@@ -13,7 +13,7 @@ public class Problem60 extends ConsoleProgram{
 			}
 			myArrayList.add(n);
 		}
-		for(int i = myArrayList.size(); i >= 0; i--){
+		for(int i = myArrayList.size() - 1; i >= 0; i--){
 			println(myArrayList.get(i));
 		}
 	}
