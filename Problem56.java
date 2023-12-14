@@ -1,25 +1,28 @@
+import java.util.ArrayList;
+
 import acm.program.ConsoleProgram;
 
 public class Problem56 extends ConsoleProgram {
 
 	public void run() {
 		int n = readInt("enter n: ");
-		int[] array = new int[n];
-		for (int i = 0; i < n; i++) {
-			array[i] = readInt("enter number: ");
+		ArrayList<Integer> myArray = new ArrayList<Integer>();
+		for(int i = 0; i < n; i++){
+			int m = readInt("enter a number: ");
+			myArray.add(m);
 		}
-		int minimum = findMinumum(array);
-		println(minimum);
-		for(int k = 1; k < n - 1; k++){
-			
+		for(int j = myArray.size(); j >= 0;  j--){
+			int k = findMinimum(myArray);
+			myArray.remove(k);
 		}
 	}
 
-	private int findMinumum(int[] array) {
-		int min = array[1];
-		for(int j = 0; j < array.length; j++){
-			if(array[j] < min){
-				min = array[j];
+	private int findMinimum(ArrayList<Integer> myArray) {
+		int min = myArray.get(0);
+		for(int r = 0; r < myArray.size(); r++){
+			if(myArray.get(r) < min){
+				min = myArray.get(r);
+				print(min);
 			}
 		}
 		return min;
