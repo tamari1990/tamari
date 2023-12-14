@@ -11,7 +11,7 @@ public class Problem56 extends ConsoleProgram {
 			int m = readInt("enter a number: ");
 			myArray.add(m);
 		}
-		for(int j = myArray.size(); j >= 0;  j--){
+		for(int j = myArray.size() -1 ; j >= 0;  j--){
 			int k = findMinimum(myArray);
 			myArray.remove(k);
 		}
