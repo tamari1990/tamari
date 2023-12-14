@@ -22,9 +22,9 @@ public class Problem56 extends ConsoleProgram {
 		for (int r = 0; r < myArray.size(); r++) {
 			if (myArray.get(r) < min) {
 				min = myArray.get(r);
-			}
-			print(min);
+			}			
 		}
+		print(min);
 		return min;
 	}
 
