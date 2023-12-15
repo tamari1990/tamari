@@ -17,7 +17,7 @@ public class Problem58 extends ConsoleProgram {
 				}
 				for (int j = 0; j < magic.length; j++) {
 					for (int k = 0; k < magic[0].length; k++) {
-						if(num == magic[j][k] && r!=j && c!=k){
+						if (num == magic[j][k] && (r != j || c != k)) {
 							isMagic = false;
 						}
 					}
