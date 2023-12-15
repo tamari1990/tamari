@@ -9,9 +9,6 @@ public class Problem58 extends ConsoleProgram {
 		magic[1][0] = 3;
 		magic[1][1] = 4;
 		boolean isMagic = true;
-		println(magic.length);
-		println(magic[0].length);
-		println(isMagic);
 		for (int r = 0; r < magic.length; r++) {
 			for (int c = 0; c < magic[0].length; c++) {
 				int num = magic[r][c];
@@ -27,6 +24,6 @@ public class Problem58 extends ConsoleProgram {
 				}
 			}
 		}
-
+		println(isMagic);
 	}
 }
