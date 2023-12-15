@@ -5,7 +5,7 @@ import acm.program.ConsoleProgram;
 public class Problem56 extends ConsoleProgram {
 
 	public void run() {
-		int n = readInt("enter n: ");
+ 		int n = readInt("enter n: ");
 		ArrayList<Integer> myArray = new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
 			int m = readInt("enter a number: ");
