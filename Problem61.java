@@ -9,7 +9,7 @@ public class Problem61 extends ConsoleProgram{
 		int m = readInt("enter m: ");
 		int n = readInt("enter n: ");
 		for(int k = 0; k < n; k++){
-			int num = readInt("enter a number ");
+			int num = readInt("enter a number: ");
 			myArray.add(num);
 		}
 		for(int i = 0; i < myArray.size() -1; i++){
