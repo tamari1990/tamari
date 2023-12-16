@@ -7,7 +7,7 @@ public class Problem58 extends ConsoleProgram {
 		magic[0][0] = 1;
 		magic[0][1] = 2;
 		magic[1][0] = 3;
-		magic[1][1] = 4;
+		magic[1][1] = 4 ;
 		boolean isMagic = true;
 		for (int r = 0; r < magic.length; r++) {
 			for (int c = 0; c < magic[0].length; c++) {
