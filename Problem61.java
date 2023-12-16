@@ -8,7 +8,7 @@ public class Problem61 extends ConsoleProgram{
 		ArrayList<Integer> myArray = new ArrayList<Integer>();
 		int m = readInt("enter m: ");
 		int n = readInt("enter n: ");
-		for(int i = 0; i < n; i++){
+		for(int k = 0; k < n; k++){
 			int num = readInt("enter a number ");
 			myArray.add(num);
 		}
