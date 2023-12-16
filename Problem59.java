@@ -16,23 +16,18 @@ public class Problem59 extends ConsoleProgram {
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
-                int num = matrix[i][j];
-                if (num == 1) {
-                    for (int k = i; k < matrix.length; k++) {
-                        if (matrix[k][j] == 1) {
-                            int r = 0;
-                            while (j + r + 1 < matrix[0].length && matrix[i][j + 1 + r] == 1 && matrix[k][j + 1 + r] == 1) {
-                                r++;
-                            }
-                            int width = j + 1 + r;
-                            int height = k - i + 1;
-                            int area = width * height;
-                            if (area > maxLength) {
-                                maxLength = area;
-                            }
-                        } else {
-                            break;
+                if (matrix[i][j] == 1) {
+                    int k = i;
+                    while (k < matrix.length && matrix[k][j] == 1) {
+                        int r = 0;
+                        while (j + r < matrix[0].length && matrix[i][j + r] == 1 && matrix[k][j + r] == 1) {
+                            r++;
                         }
+                        int width = r;
+                        int height = k - i + 1;
+                        int area = width * height;
+                        maxLength = Math.max(maxLength, area);
+                        k++;
                     }
                 }
             }
