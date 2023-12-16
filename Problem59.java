@@ -20,14 +20,18 @@ public class Problem59 extends ConsoleProgram {
                 if (num == 1) {
                     for (int k = i; k < matrix.length; k++) {
                         if (matrix[k][j] == 1) {
-                            for (int r = 0; j + 1 + r < matrix[0].length && matrix[i][j + 1 + r] == 0 && matrix[k][j + 1 + r] == 0; r++) {
-                                int width = r + 1;
-                                int height = k - i + 1;
-                                int area = width * height;
-                                if (area > maxLength) {
-                                    maxLength = area;
-                                }
+                            int r = 0;
+                            while (j + r + 1 < matrix[0].length && matrix[i][j + 1 + r] == 1 && matrix[k][j + 1 + r] == 1) {
+                                r++;
                             }
+                            int width = r + 1;
+                            int height = k - i + 1;
+                            int area = width * height;
+                            if (area > maxLength) {
+                                maxLength = area;
+                            }
+                        } else {
+                            break;
                         }
                     }
                 }
