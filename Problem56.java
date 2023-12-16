@@ -15,7 +15,7 @@ public class Problem56 extends ConsoleProgram {
 			int k = findMinimum(myArray);
 			myArray.remove(k);
 		}
-		print(myArray);
+		print(myArray.get(0));
 	}
 
 	private int findMinimum(ArrayList<Integer> myArray) {
