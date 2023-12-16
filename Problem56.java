@@ -15,17 +15,19 @@ public class Problem56 extends ConsoleProgram {
 			int k = findMinimum(myArray);
 			myArray.remove(k);
 		}
+		print(myArray);
 	}
 
 	private int findMinimum(ArrayList<Integer> myArray) {
 		int min = myArray.get(0);
 		for (int r = 0; r < myArray.size(); r++) {
-			if (myArray.get(r) <= min) {
+			if (myArray.get(r) < min) {
 				min = myArray.get(r);			
 			}			
 		}
 		print(min);
 		return myArray.indexOf(min);
 	}
+	
 
 }
