@@ -15,9 +15,9 @@ public class Problem59 extends ConsoleProgram {
 				if(num == 1){
 					for(int k = i; k < matrix[0].length; k++){
 						if(matrix[k][j] == 1){
-							for(int r = 0; r < matrix.length; r++){
-								if(matrix[i][1 + r] == 1 && matrix[k][1 + r] == 1){
-									println((k - i) * (r));
+							for(int r = 0; r < matrix[0].length - j - 1; r++){
+								if(matrix[i][j + 1 + r] == 1 && matrix[k][1 + r + j] == 1){
+									println((k - i) * (r + 1));
 								}
 							}
 						}
