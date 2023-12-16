@@ -14,7 +14,7 @@ public class Problem61 extends ConsoleProgram{
 		}
 		for(int i = 0; i < myArray.size() -1; i++){
 			int number = myArray.get(i);
-			for(int j = 0; j < myArray.size() - 1; j++){
+			for(int j = 0; j < myArray.size(); j++){
 				if(myArray.get(j) + number == m && j != i){
 					println(myArray.get(j));
 					println(number);
