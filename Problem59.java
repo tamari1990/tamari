@@ -23,7 +23,7 @@ public class Problem59 extends ConsoleProgram {
                         while (j + r < matrix[0].length && matrix[i][j + r] == 1 && matrix[k][j + r] == 1) {
                             r++;
                         }
-                        int width = r;
+                        int width = j + r - i + 1;
                         int height = k - i + 1;
                         int area = width * height;
                         maxLength = Math.max(maxLength, area);
