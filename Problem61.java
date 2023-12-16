@@ -16,8 +16,10 @@ public class Problem61 extends ConsoleProgram{
 			int number = myArray.get(i);
 			for(int j = 0; j < myArray.size(); j++){
 				if(myArray.get(j) + number == m && j != i){
-					println(myArray.get(j));
-					println(number);
+					ArrayList<Integer> pairs = new ArrayList<Integer>();
+					pairs.add(number);
+					pairs.add(myArray.get(j));
+					println(pairs);
 				}
 			}
 		}
