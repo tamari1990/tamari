@@ -20,10 +20,8 @@ public class Problem68 extends GraphicsProgram{
 	}
 	
 	public void actionPerformed(ActionEvent e){
-		//println("here");
 		if(e.getSource() == textField || e.getSource() == button){
 			String text = textField.getText();
-			//println(text);
 			if(text == null || text.equals("")){
 				return;
 			}
