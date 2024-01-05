@@ -10,6 +10,7 @@ public class Problem68 extends GraphicsProgram{
 	
 	private JTextField textField;
 	private JButton button;
+	private int y = 40;
 	public void init(){
 		textField = new JTextField(20);
 		add(textField, SOUTH);
@@ -27,7 +28,6 @@ public class Problem68 extends GraphicsProgram{
 				return;
 			}
 			int x = 40;
-			int y = 40;
 			add(new GLabel(text), x, y);
 			y += 40;
 			textField.setText("");
