@@ -13,21 +13,31 @@ public class Problem67 extends GraphicsProgram{
 	public void init(){
 		myTextField = new JTextField(50);
 		add(myTextField, SOUTH);
+		myTextField.addActionListener(this);myTextField = new JTextField(20);
+		add(myTextField, SOUTH);
+		
 		myTextField.addActionListener(this);
+		addActionListeners();
+		
+		GImage image = new GImage("bad path");
+		double x = getWidth()/ 2 - image.getWidth() / 2;
+		double y = getHeight()/ 2 - image.getHeight() / 2;
+		add(image, x, y);
 	}
 	
 	public void actionPerformed(ActionEvent e){
-		String photoAdress = e.getActionCommand();
-		try{
-			GImage image = new GImage(photoAdress);
-			double x = getWidth()/ 2 - image.getWidth() / 2;
-			double y = getHeight()/ 2 - image.getHeight() / 2;
-			add(image, x, y);
-		}catch(Exception ex){
-			add(new GLabel("Invalid adress"), 20, 20);
-			removeAll();
+		if(e.getSource() == myTextField) {
+			try {
+				GImage image = new GImage(myTextField.getText());
+				double x = getWidth()/ 2 - image.getWidth() / 2;
+				double y = getHeight()/ 2 - image.getHeight() / 2;
+				add(image, x, y);
+			} catch(Exception ex) {
+				removeAll();
+				add(new GLabel("Error occured"), 20, 20);
+			}
+			myTextField.setText("");
 		}
-		myTextField.setText("");
 	}
 
 }
