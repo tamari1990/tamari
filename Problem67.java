@@ -31,7 +31,7 @@ public class Problem67 extends GraphicsProgram {
         }
     }
 
-    public static void main(String[] args) {
-        new Problem67().start();
-    }
+   // public static void main(String[] args) {
+     //   new Problem67().start();
+    //}
 }
