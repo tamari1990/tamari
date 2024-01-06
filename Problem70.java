@@ -7,8 +7,8 @@ public class Problem70 extends GraphicsProgram {
     private GCompound grid;
     private GRect shape;
 
-    private int numRows = 10; // Initial number of rows in the grid
-    private int numCols = 10; // Initial number of columns in the grid
+    private int numRows = 10; 
+    private int numCols = 10; 
 
     public void run() {
         drawGrid();
@@ -23,9 +23,7 @@ public class Problem70 extends GraphicsProgram {
         if (shape != null) {
             remove(shape);
         }
-
-        // Create a new shape (for example, a rectangle)
-        shape = new GRect(200, 100); // Initial size of the shape
+        shape = new GRect(200, 100);
         shape.setFilled(true);
         shape.setFillColor(Color.BLUE);
         add(shape, getWidth() / 2.0 - shape.getWidth() / 2.0, getHeight() / 2.0 - shape.getHeight() / 2.0);
