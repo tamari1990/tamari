@@ -1,6 +1,7 @@
 import acm.graphics.*;
 import acm.program.*;
 import java.awt.Color;
+import java.awt.event.ComponentEvent;
 
 public class Problem70 extends GraphicsProgram {
     private GCompound grid;
@@ -14,7 +15,6 @@ public class Problem70 extends GraphicsProgram {
         drawShape();
     }
 
-    @Override
     public void componentResized(ComponentEvent e) {
         drawGrid();
     }
