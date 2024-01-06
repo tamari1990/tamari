@@ -18,9 +18,9 @@ public class Problem70 extends GraphicsProgram {
         drawShape();
     }
     
-    //public void componentResized(ComponentEvent e) {
-    	//drawGrid();
-    //}
+    public void componentResized(ComponentEvent e) {
+    	drawGrid();
+    }
 
     private void drawShape() {
         if (shape != null) {
