@@ -12,15 +12,12 @@ public class Problem70 extends GraphicsProgram {
     private int numCols = 10; // Initial number of columns in the grid
 
     public void run() {
-        addComponentListener(new ComponentAdapter() {
-          //  @Override
-           // public void componentResized(ComponentEvent e) {
-             //   drawGrid();
-            //}
-        });
-
         drawGrid();
         drawShape();
+    }
+    
+    public void componentResized(ComponentEvent e) {
+    	drawGrid();
     }
 
     private void drawShape() {
