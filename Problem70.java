@@ -14,6 +14,7 @@ public class Problem70 extends GraphicsProgram {
         drawShape();
     }
 
+    @Override
     public void componentResized(ComponentEvent e) {
         drawGrid();
     }
