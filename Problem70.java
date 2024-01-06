@@ -19,7 +19,7 @@ public class Problem70 extends GraphicsProgram {
             //}
         });
 
-        //drawGrid();
+        drawGrid();
         drawShape();
     }
 
@@ -35,7 +35,7 @@ public class Problem70 extends GraphicsProgram {
         add(shape, getWidth() / 2.0 - shape.getWidth() / 2.0, getHeight() / 2.0 - shape.getHeight() / 2.0);
     }
 
-   /* private void drawGrid() {
+    private void drawGrid() {
         if (grid != null) {
             remove(grid);
         }
@@ -62,5 +62,5 @@ public class Problem70 extends GraphicsProgram {
         return gridBox;
     }
 
-    */
+    
 }
