@@ -61,7 +61,5 @@ public class Problem70 extends GraphicsProgram {
         return gridBox;
     }
 
-    public static void main(String[] args) {
-        new ProportionalGrid().start();
-    }
+    
 }
