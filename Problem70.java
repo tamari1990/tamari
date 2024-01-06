@@ -1,9 +1,6 @@
 import acm.graphics.*;
 import acm.program.*;
 import java.awt.Color;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
-import java.awt.event.ComponentListener;
 
 public class Problem70 extends GraphicsProgram {
     private GCompound grid;
@@ -13,13 +10,12 @@ public class Problem70 extends GraphicsProgram {
     private int numCols = 10; // Initial number of columns in the grid
 
     public void run() {
-    	addComponentListener((ComponentListener) this);
         drawGrid();
         drawShape();
     }
-    
+
     public void componentResized(ComponentEvent e) {
-    	drawGrid();
+        drawGrid();
     }
 
     private void drawShape() {
@@ -53,13 +49,10 @@ public class Problem70 extends GraphicsProgram {
 
         add(grid);
     }
-    
 
     private GRect createGridBox(double width, double height) {
         GRect gridBox = new GRect(width, height);
         gridBox.setColor(Color.LIGHT_GRAY);
         return gridBox;
     }
-
-    
 }
