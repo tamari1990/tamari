@@ -13,13 +13,13 @@ public class Problem70 extends GraphicsProgram {
 
     public void run() {
         addComponentListener(new ComponentAdapter() {
-            @Override
-            public void componentResized(ComponentEvent e) {
-                drawGrid();
-            }
+          //  @Override
+           // public void componentResized(ComponentEvent e) {
+             //   drawGrid();
+            //}
         });
 
-        drawGrid();
+        //drawGrid();
         drawShape();
     }
 
