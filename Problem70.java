@@ -12,7 +12,6 @@ public class Problem70 extends GraphicsProgram {
 
 	public void run() {
 		drawShape();
-		shape.setSize(1000, 1000);
 		drawGrid();
 	}
 
