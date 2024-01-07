@@ -11,8 +11,8 @@ public class Problem70 extends GraphicsProgram {
     private int numCols = 10; 
 
     public void run() {
-        drawGrid();
         drawShape();
+        drawGrid();
     }
 
     public void componentResized(ComponentEvent e) {
