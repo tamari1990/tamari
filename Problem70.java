@@ -13,12 +13,10 @@ public class Problem70 extends GraphicsProgram {
 	public void run() {
 		drawShape();
 		drawGrid();
+		shape.setSize(1000, 1000);
 	}
 
-	public void componentResized(ComponentEvent e) {
-		 double newWidth = getWidth() / 2.0 - shape.getWidth() / 2.0;
-		    double newHeight = getHeight() / 2.0 - shape.getHeight() / 2.0;
-		    shape.setSize(newWidth, newHeight);
+	public void componentResized(ComponentEvent e) {	 	
 		    drawGrid();
 	}
 
