@@ -16,6 +16,7 @@ public class Problem70 extends GraphicsProgram {
 	}
 
 	public void componentResized(ComponentEvent e) {
+		shape.setSize(500, 500);
 		drawGrid();
 	}
 
@@ -23,7 +24,7 @@ public class Problem70 extends GraphicsProgram {
 		if (shape != null) {
 			remove(shape);
 		}
-		shape = new GRect(400, 100);
+		shape = new GRect(200, 100);
 		shape.setFilled(true);
 		shape.setFillColor(Color.BLUE);
 		add(shape, getWidth() / 2.0 - shape.getWidth() / 2.0, getHeight() / 2.0 - shape.getHeight() / 2.0);
