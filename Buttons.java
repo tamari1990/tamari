@@ -12,7 +12,7 @@ public class Buttons extends ConsoleProgram{
 		addActionListeners();
 	}
 	
-	public void ActionPerformed(ActionEvent e){
+	public void actionPerformed(ActionEvent e){
 		String command = e.getActionCommand();
 		if(command.equals("HI")){
 			println("hello");
