@@ -6,15 +6,20 @@ import acm.program.ConsoleProgram;
 
 public class Buttons extends ConsoleProgram{
 
+	private JButton button;
 	public void init(){
 		setFont("Courier-24");
-		add(new JButton("HI"), SOUTH);
+		button = new JButton("HI");
+		add(button, SOUTH);
 		addActionListeners();
 	}
 	
 	public void actionPerformed(ActionEvent e){
 		String command = e.getActionCommand();
-		if(command.equals("HI")){
+		//if(command.equals("HI")){
+			//println("hello");
+		//}
+		if(e.getSource() == button){
 			println("hello");
 		}
 	}
