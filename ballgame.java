@@ -43,6 +43,7 @@ public class ballgame extends GraphicsProgram {
 			if(numberOfClicks == 3){
 				vx = 0;
 				vy = 0;
+				break;
 			}
 			// Check for collisions with the edges of the window
 			if (ball.getX() + 2 * BALL_SIZE >= getWidth() || ball.getX() <= 0) {
