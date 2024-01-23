@@ -19,6 +19,7 @@ public class ballgame extends GraphicsProgram {
 	private int vx;
 	private int vy;
 	private int numberOfClicks = 0;
+	 private boolean isBallMoving = true;
 
 	public void init() {
 		xVelocity = new JTextField(10);
@@ -37,12 +38,13 @@ public class ballgame extends GraphicsProgram {
 		add(ball, getWidth() / 2 - BALL_SIZE, getHeight() / 2 - BALL_SIZE);
 		vx = rgen.nextInt(10);
 		vy = rgen.nextInt(10);
-		while (true) {
+		while (isBallMoving) {
 			ball.move(vx, vy);
 			pause(DELAY);
 			if(numberOfClicks == 3){
 				vx = 0;
 				vy = 0;
+				isBallMoving = false;
 			}
 			if(vx == 0 && vy == 0 && numberOfClicks == 2){
 				vx = Integer.parseInt(xVelocity.getText());
