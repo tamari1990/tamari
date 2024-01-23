@@ -45,6 +45,10 @@ public class ballgame extends GraphicsProgram {
 				vy = 0;
 				break;
 			}
+			if(vx == 0 && vy == 0 && numberOfClicks == 2){
+				vx = Integer.parseInt(xVelocity.getText());
+				vy = Integer.parseInt(yVelocity.getText());
+			}
 			// Check for collisions with the edges of the window
 			if (ball.getX() + 2 * BALL_SIZE >= getWidth() || ball.getX() <= 0) {
 				vx = -vx;
