@@ -43,7 +43,6 @@ public class ballgame extends GraphicsProgram {
 			if(numberOfClicks == 3){
 				vx = 0;
 				vy = 0;
-				break;
 			}
 			if(vx == 0 && vy == 0 && numberOfClicks == 2){
 				vx = Integer.parseInt(xVelocity.getText());
