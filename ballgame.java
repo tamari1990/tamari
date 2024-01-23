@@ -1,7 +1,9 @@
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseEvent;
 
 import javax.swing.JTextField;
 
+import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
@@ -16,6 +18,7 @@ public class ballgame extends GraphicsProgram {
 	private JTextField yVelocity;
 	private int vx;
 	private int vy;
+	private int numberOfClicks = 0;
 
 	public void init() {
 		xVelocity = new JTextField(10);
@@ -25,6 +28,7 @@ public class ballgame extends GraphicsProgram {
 		addActionListeners();
 		xVelocity.addActionListener(this);
 		yVelocity.addActionListener(this);
+		addMouseListeners();
 	}
 
 	public void run() {
@@ -41,20 +45,34 @@ public class ballgame extends GraphicsProgram {
 			if (ball.getX() + 2 * BALL_SIZE >= getWidth() || ball.getX() <= 0) {
 				vx = -vx;
 			}
-			if(ball.getY() + 2 * BALL_SIZE >= getHeight() || ball.getY() <= 0){
-				vy = -vy; 
+			if (ball.getY() + 2 * BALL_SIZE >= getHeight() || ball.getY() <= 0) {
+				vy = -vy;
+			}
+			if(numberOfClicks == 3){
+				vx = 0;
+				vy = 0;
 			}
 		}
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		if(e.getSource() == xVelocity){
+		if (e.getSource() == xVelocity) {
 			String v1 = xVelocity.getText();
 			vx = Integer.parseInt(v1);
 		}
-		if(e.getSource() == yVelocity){
+		if (e.getSource() == yVelocity) {
 			String v2 = yVelocity.getText();
 			vy = Integer.parseInt(v2);
+		}
+	}
+
+	public void mouseClicked(MouseEvent e) {
+		GObject obj = getElementAt(e.getX(), e.getY());
+		if(obj == ball){
+			numberOfClicks++;
+		}
+		if(obj != ball){
+			numberOfClicks = 0;
 		}
 	}
 }
