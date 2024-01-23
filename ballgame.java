@@ -41,6 +41,9 @@ public class ballgame extends GraphicsProgram {
 			if (ball.getX() + 2 * BALL_SIZE >= getWidth() || ball.getX() <= 0) {
 				vx = -vx;
 			}
+			if(ball.getY() >= getHeight() || ball.getY() - 2 * BALL_SIZE <= 0){
+				vy = -vy;
+			}
 		}
 	}
 
