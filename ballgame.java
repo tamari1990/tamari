@@ -12,8 +12,8 @@ public class ballgame extends GraphicsProgram{
 		ball = new GOval(BALL_SIZE * 2, BALL_SIZE * 2);
 		ball.setFilled(true);
 		add(ball, getWidth() / 2 - BALL_SIZE, getHeight() / 2 - BALL_SIZE);
-		int vx = rgen.nextInt();
-		int vy = rgen.nextInt();
+		int vx = rgen.nextInt(5);
+		int vy = rgen.nextInt(5);
 		ball.move(vx, vy);
 		pause(DELAY);
 	}
