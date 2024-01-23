@@ -6,6 +6,7 @@ public class ballgame extends GraphicsProgram{
 	
 	private RandomGenerator rgen = new RandomGenerator();
 	private static final int BALL_SIZE = 20;
+	private int DELAY = 1000;
 	private GOval ball;
 	public void run(){
 		ball = new GOval(BALL_SIZE * 2, BALL_SIZE * 2);
@@ -14,6 +15,7 @@ public class ballgame extends GraphicsProgram{
 		int vx = rgen.nextInt();
 		int vy = rgen.nextInt();
 		ball.move(vx, vy);
+		pause(DELAY);
 	}
 
 }
