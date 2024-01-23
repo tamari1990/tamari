@@ -40,7 +40,10 @@ public class ballgame extends GraphicsProgram {
 		while (true) {
 			ball.move(vx, vy);
 			pause(DELAY);
-
+			if(numberOfClicks == 3){
+				vx = 0;
+				vy = 0;
+			}
 			// Check for collisions with the edges of the window
 			if (ball.getX() + 2 * BALL_SIZE >= getWidth() || ball.getX() <= 0) {
 				vx = -vx;
@@ -48,10 +51,7 @@ public class ballgame extends GraphicsProgram {
 			if (ball.getY() + 2 * BALL_SIZE >= getHeight() || ball.getY() <= 0) {
 				vy = -vy;
 			}
-			if(numberOfClicks == 3){
-				vx = 0;
-				vy = 0;
-			}
+			
 		}
 	}
 
