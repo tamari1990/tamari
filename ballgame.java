@@ -47,6 +47,7 @@ public class ballgame extends GraphicsProgram {
 				isBallMoving = false;
 			}
 			if(vx == 0 && vy == 0 && numberOfClicks == 2){
+				isBallMoving = true;
 				vx = Integer.parseInt(xVelocity.getText());
 				vy = Integer.parseInt(yVelocity.getText());
 			}
