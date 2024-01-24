@@ -18,6 +18,7 @@ public class AddSpaces extends ConsoleProgram{
 		for(int i = 0; i < indexes.size(); i++){
 			int index = indexes.get(i);
 			newSentence += sentence.substring(index);
+			newSentence += " ";
 		}
 		return newSentence;
 	}
