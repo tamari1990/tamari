@@ -22,7 +22,7 @@ public class AddSpaces extends ConsoleProgram{
 			newSentence += " ";
 			startingPoint = endingPoint;
 		}
-		newSentence += sentence.substring(indexes.size(), sentence.length());
+		newSentence += sentence.substring(indexes.get(indexes.size()), sentence.length());
 		return newSentence;
 	}
 
