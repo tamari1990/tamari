@@ -5,10 +5,10 @@ import acm.program.ConsoleProgram;
 public class AddSpaces extends ConsoleProgram{
 	
 	public void init(){
-		String sentence = "EnjoyYourExam";
+		String sentence = "ILoveCoding";
 		ArrayList<Integer> indexes = new ArrayList<Integer>();
+		indexes.add(1);
 		indexes.add(5);
-		indexes.add(9);
 		sentence = addSpaces(sentence, indexes);
 		println(sentence);
 	}
