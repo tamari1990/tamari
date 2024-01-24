@@ -12,7 +12,7 @@ public class Zero extends ConsoleProgram {
 		println(matrix);
 	}
 
-	private int[][] nullTheMatrix(int[][] matrix) {
+	/*private int[][] nullTheMatrix(int[][] matrix) {
 		for(int row = 0; row < matrix.length; row++){
 			for(int column = 0; column < matrix[0].length; column++){
 				if(matrix[row][column] == 0){
@@ -27,5 +27,5 @@ public class Zero extends ConsoleProgram {
 		}
 		return matrix;
 	}
-
+*/
 }
