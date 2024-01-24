@@ -7,6 +7,8 @@ public class AddSpaces extends ConsoleProgram{
 	public void init(){
 		String sentence = "EnjoyYourExam";
 		ArrayList<Integer> indexes = new ArrayList<Integer>();
+		indexes.add(5);
+		indexes.add(9);
 		sentence = addSpaces(sentence, indexes);
 		println(sentence);
 	}
