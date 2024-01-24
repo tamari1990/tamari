@@ -13,6 +13,12 @@ public class Zero extends ConsoleProgram {
 	}
 
 	private int[][] nullTheMatrix(int[][] matrix) {
+		int[][] newMatrix = new int[matrix.length][matrix[0].length];
+		for(int i = 0; i < matrix.length; i++){
+			for(int j = 0; j < matrix[0].length; j++){
+				newMatrix[i][j] = matrix[i][j];
+			}
+		}
 		for (int row = 0; row < matrix.length; row++) {
 			for (int column = 0; column < matrix[0].length; column++) {
 				if (matrix[row][column] == 0) {
@@ -25,7 +31,7 @@ public class Zero extends ConsoleProgram {
 				}
 			}
 		}
-		return matrix;
+		return newMatrix;
 	}
 
 }
