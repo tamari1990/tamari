@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 import acm.program.ConsoleProgram;
 
-public class AddSpaces extends ConsoleProgram{
-	
-	public void init(){
+public class AddSpaces extends ConsoleProgram {
+
+	public void init() {
 		String sentence = "ILoveCoding";
 		ArrayList<Integer> indexes = new ArrayList<Integer>();
 		indexes.add(1);
@@ -16,7 +16,7 @@ public class AddSpaces extends ConsoleProgram{
 	private String addSpaces(String sentence, ArrayList<Integer> indexes) {
 		String newSentence = "";
 		int startingPoint = 0;
-		for(int i = 0; i < indexes.size(); i++){
+		for (int i = 0; i < indexes.size(); i++) {
 			int endingPoint = indexes.get(i);
 			newSentence += sentence.substring(startingPoint, endingPoint);
 			newSentence += " ";
