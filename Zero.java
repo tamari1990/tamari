@@ -23,10 +23,10 @@ public class Zero extends ConsoleProgram {
 			for (int column = 0; column < matrix[0].length; column++) {
 				if (matrix[row][column] == 0) {
 					for (int c = 0; c < matrix[0].length; c++) {
-						matrix[row][c] = 0;
+						newMatrix[row][c] = 0;
 					}
 					for (int r = 0; r < matrix.length; r++) {
-						matrix[r][column] = 0;
+						newMatrix[r][column] = 0;
 					}
 				}
 			}
