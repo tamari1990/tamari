@@ -16,9 +16,11 @@ public class AddSpaces extends ConsoleProgram{
 	private String addSpaces(String sentence, ArrayList<Integer> indexes) {
 		String newSentence = "";
 		for(int i = 0; i < indexes.size(); i++){
-			int index = indexes.get(i);
-			newSentence += sentence.substring(0, index);
+			int startingPoint = 0;
+			int endingPoint = indexes.get(i);
+			newSentence += sentence.substring(startingPoint, endingPoint);
 			newSentence += " ";
+			startingPoint = endingPoint;
 		}
 		return newSentence;
 	}
