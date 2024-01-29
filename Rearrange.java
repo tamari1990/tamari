@@ -25,8 +25,8 @@ public class Rearrange extends ConsoleProgram {
 			arrangedSentence.add(shortestWord);
 			int shortestWordsIndex = 0;
 			for (int j = 0; j < words.size(); j++) {
-				if (words.get(i) == shortestWord) {
-					shortestWordsIndex = i;
+				if (words.get(j) == shortestWord) {
+					shortestWordsIndex = j;
 				}
 			}
 			words.remove(shortestWordsIndex);
