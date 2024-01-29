@@ -20,7 +20,8 @@ public class Rearrange extends ConsoleProgram {
 		}
 		int shortestLength = Integer.MAX_VALUE;
 		ArrayList<String> arrangedSentence = new ArrayList<String>();
-		for (int i = 0; i < words.size(); i++) {
+		int size = words.size();
+		for (int i = 0; i < size; i++) {
 			String shortestWord = findTheShortestWord(words, shortestLength);
 			arrangedSentence.add(shortestWord);
 			int shortestWordsIndex = 0;
